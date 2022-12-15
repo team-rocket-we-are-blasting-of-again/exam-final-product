@@ -35,39 +35,42 @@ if any special requirements are needed to run the project or else delete this pa
 ### 3.0 Legacy system  
 Analyze the domain and identify potential problems in existing legacy digital systems at the 
 customer, such as lack of functionality, performance issues, operation difficulties, data 
-storage and transformation issues, customer dissatisfaction, etc.  
-
+storage and transformation issues, customer dissatisfaction, etc.    
+    
 ### 4.0 Business cases
 insert our already made business cases which is the foundation of our work  
-
-### 5.0 Design and architecture
+  
+### 5.0 Functional requirements  
+Insert the function and nonfunctional requirements that were made    
+  
+### 6.0 Design and diagrams
 short description of our thoughts  
   
-#### 5.1 Domain models 
+#### 6.1 Domain models 
 short about DDD and then insert:
 -domains  
 -context maps  
 -ubigitous language 
   
-#### 5.2 C4 models  
+#### 6.2 C4 models  
   
-#### 5.3 Diagrams  
+#### 6.3 Diagrams  
 -class diagrams  
 -sequence diagrams  
   
-### 6.0 Architecture
+### 7.0 Architecture
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
 -insert overview of the whole system architecture  
--insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)   
+-insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
   
-### 7.0 Functional requirements  
-Insert the function and nonfunctional requirements that were made  
+### 8.0 System integration patterns
+describe the integration patterns that are used through our system (this will give very good points with Dora :smile: )
   
-### 8.0 Technologies  
+### 9.0 Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
   
-### 9.0 Mandatory feature requirements  
+### 10.0 Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
 how we met each of the requirements.   
    
@@ -121,11 +124,15 @@ b. in Wiseflow, a 10-minute video, where the business cases, problems and soluti
 are discussed, demonstrated, and evaluated by the team members  
   
   
-### 10.0 Version history  
+### 11.0 Version history  
 link our versions dev -> release here
 - 0.0.1 initial start
 - 0.0.3 removal of bugs and optimization
-- 1.0.0 release to production
+- 1.0.0 release to production  
+  
+### 12.0 Reflection  
+We can reflect over the things we have made or what could have been made here.  
+  
 
 
 
