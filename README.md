@@ -32,42 +32,42 @@ we could potentially add a postman collection here as well
 #### 2.2 How to use the project  
 if any special requirements are needed to run the project or else delete this part as well
 
-## 3.0 Legacy system  
+### 3.0 Legacy system  
 Analyze the domain and identify potential problems in existing legacy digital systems at the 
 customer, such as lack of functionality, performance issues, operation difficulties, data 
 storage and transformation issues, customer dissatisfaction, etc.  
 
-## 4.0 Business cases
+### 4.0 Business cases
 insert our already made business cases which is the foundation of our work  
 
-## 5.0 Design and architecture
+### 5.0 Design and architecture
 short description of our thoughts  
   
-### 5.1 Domain models 
+#### 5.1 Domain models 
 short about DDD and then insert:
 -domains  
 -context maps  
 -ubigitous language 
   
-### 5.2 C4 models  
+#### 5.2 C4 models  
   
-### 5.3 Diagrams  
+#### 5.3 Diagrams  
 -class diagrams  
 -sequence diagrams  
   
-## 6.0 Architecture
+### 6.0 Architecture
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
 -insert overview of the whole system architecture  
 -insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)   
   
-## 7.0 Functional requirements  
+### 7.0 Functional requirements  
 Insert the function and nonfunctional requirements that were made  
   
-## 8.0 Technologies  
+### 8.0 Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
   
-## 9.0 Mandatory feature requirements  
+### 9.0 Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
 how we met each of the requirements.   
    
@@ -121,7 +121,7 @@ b. in Wiseflow, a 10-minute video, where the business cases, problems and soluti
 are discussed, demonstrated, and evaluated by the team members  
   
   
-## 10.0 Version history  
+### 10.0 Version history  
 link our versions dev -> release here
 - 0.0.1 initial start
 - 0.0.3 removal of bugs and optimization
