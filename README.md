@@ -12,6 +12,22 @@
 
 ### Table of content
 1. [Introduction](#Introduction)
+2. [Repositories](#Repositories)
+3. [Getting-started](#Getting-started)
+  1. [Environments](#Environments)
+  2. [How to use the project](#How to use the project)
+6. [Legacy system](#Legacy system)
+7. [Business cases](#Business cases)
+8. [Functional requirements](#Functional requirements)
+9. [Design and diagrams](#Design and diagrams)
+   1. [Domain models](#Domain models)
+   2. [C4 models](#C4 models)
+   3. [Diagrams](#Diagrams)
+13. [Architecture](#Architecture)
+14. [System integration patterns](#System integration patterns)
+15. [Mandatory feature requirements](#Mandatory feature requirements)
+16. [Version history](#Version history)
+17. [Reflection](#Reflection)
       
 ### Introduction    
 introduce the project and our task  
@@ -19,58 +35,58 @@ introduce the project and our task
 also link to our video here
 also link to our deployment here  
 
-### 2.0 Repositories
+### Repositories
 link to all our repositories that were used to make our system  
 
-### 2.0 Getting started  
+### Getting started  
 how to run the project (could be local or in the cloud)
 
-#### 2.1 Environments
+#### Environments
 if we show how to run it local we need to describe environments needed
 we could potentially add a postman collection here as well
   
-#### 2.2 How to use the project  
+#### How to use the project  
 if any special requirements are needed to run the project or else delete this part as well
 
-### 3.0 Legacy system  
+### Legacy system  
 Analyze the domain and identify potential problems in existing legacy digital systems at the 
 customer, such as lack of functionality, performance issues, operation difficulties, data 
 storage and transformation issues, customer dissatisfaction, etc.    
     
-### 4.0 Business cases
+### Business cases
 insert our already made business cases which is the foundation of our work  
   
-### 5.0 Functional requirements  
+### Functional requirements  
 Insert the function and nonfunctional requirements that were made    
   
-### 6.0 Design and diagrams
+### Design and diagrams
 short description of our thoughts  
   
-#### 6.1 Domain models 
+#### Domain models 
 short about DDD and then insert:
 -domains  
 -context maps  
 -ubigitous language 
   
-#### 6.2 C4 models  
+#### C4 models  
   
-#### 6.3 Diagrams  
+#### Diagrams  
 -class diagrams  
 -sequence diagrams  
   
-### 7.0 Architecture
+### Architecture
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
 -insert overview of the whole system architecture  
 -insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
   
-### 8.0 System integration patterns
+### System integration patterns
 describe the integration patterns that are used through our system (this will give very good points with Dora :smile: )
   
-### 9.0 Technologies  
+### Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
   
-### 10.0 Mandatory feature requirements  
+### Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
 how we met each of the requirements.   
    
@@ -124,13 +140,13 @@ b. in Wiseflow, a 10-minute video, where the business cases, problems and soluti
 are discussed, demonstrated, and evaluated by the team members  
   
   
-### 11.0 Version history  
+### Version history  
 link our versions dev -> release here
 - 0.0.1 initial start
 - 0.0.3 removal of bugs and optimization
 - 1.0.0 release to production  
   
-### 12.0 Reflection  
+### Reflection  
 We can reflect over the things we have made or what could have been made here.  
   
 
