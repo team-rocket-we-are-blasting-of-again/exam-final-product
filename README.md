@@ -86,10 +86,109 @@ customer, such as lack of functionality, performance issues, operation difficult
 storage and transformation issues, customer dissatisfaction, etc.    
     
 ### 5.0 Business cases
-insert our already made business cases which is the foundation of our work  
+MTOGO A/S wants to expand their current operations by implementing a new system which can handle a higher workload and is able to be distributed internationally. The new system will focus on three main types of users - customers, restaurants, and couriers.
+
+They will be able to make an account in order to use the system. The customers can order food either through the web or a mobile application. The restaurants sign up as food providers either by using the MTOGO API or using the MTOGO provided restaurant application. The couriers can sign up through the MTOGO courier application where they select regions and orders. A courier is viewed as an employee and will be paid based on the amount of orders they deliver.
+
+Restaurants pay a fee to MTOGO for using their service and a variable share of the total order value before VAT. The order fee varies from a minimum of 3%, for orders over a 1000 DKK, to a maximum of 6%, for orders under 100 DKK. Each restaurant specifies the minimum order size for delivery. Customers of MTOGO will have to pay a delivery fee.
+
+Payment will be reserved when a customer makes an order. Customers will pay automatically once a restaurant has completed an order and a courier has delivered their order. Through the MTOGO application customers will be able to track their order through the delivery phase which include preparation and delivery. 
+
+Additionally MTOGO management will be able to view all orders in the system through an administration dashboard. Likewise restaurants will be able to view all their orders in a dashboard. All orders will either be accepted or declined by the restaurant. 
+
   
-### 6.0 Functional requirements  
-Insert the function and nonfunctional requirements that were made    
+### 6.0 Requirement specification
+#### Non-Functional
+
+NFR1: The system must be made using a microservice architecture, so as to decouple the services and make the system modular. Making it easier to maintain, test and deploy each service separately.
+
+NRF2: The system must use orchestration and container technology, so that the system becomes easily scalable with high availability, on an international scale.
+
+NFR3: The system must make use of an event driven architecture.
+
+NFR4: 	The development team must make use of DevOps practices, such as automatic testing, being agile, and generally providing fast deliveries.
+
+NFR5: The system must be tested thoroughly before going into production, by using a pre production environment.
+
+NFR6: The system must be GDPR compliant.
+
+NFR7: The system must have low response times in all supported markets.
+
+NFR8: The system must have backups of stored data, such that the data will not be lost in the event of database failure.
+
+#### Functional
+
+General Requirements :
+
+R1: MTOGO requires no data loss when migrating to the new system.
+
+Restaurant requirements:
+
+R2: Restaurants should be able to integrate with the MTOGO system.
+
+R3: Restaurants of both big and small sizes should be supported, by allowing small businesses to use an interface for order management system provided by MTOGO, and allowing big businesses to integrate with an API that we expose to them. The system should allow restaurants to view orders, accept or decline orders, and see analytics on their previous orders.
+
+Customer requirements:
+
+R4: Customers should be able to order food from any of the restaurants that have an integration setup with the MTOGO system provided they are not too far away.
+
+R5: Customers must be able to search for restaurants, through various search criteria, such as restaurant name, food type etc. given that the restaurants are within a certain distance from the customer.
+
+R6: Customers must be able to provide feedback on the courier. This should be feedback on speed of delivery, and general quality of service.
+
+R7: Customers must be able to provide feedback on the restaurant. This should be feedback on quality of food, and interactions with the customer.
+
+R8: Customers must receive notifications about their orders’ status in the app. A customer is notified when their order is being prepared, when a delivery estimate is made, when the order is being delivered, when the order has been delivered and when the order is canceled for any reason.
+
+R9: Customers must be recommended restaurants in the app based on their location, any current events, feedback given to restaurants, customers’ previous orders and food preferences.
+
+R10: Customers must receive an email containing a receipt of any order they make.
+
+R11: Customers have access to a profile where they can see all relevant data about themselves. This includes previous orders, coupons and general information.
+
+R12: Customers are able to register and login to the system in order for them to make orders and have a profile.
+
+Payment requirements:
+
+R13: MTOGO does not want to deal with payments themselves, so that they do not get problems with authorities. This will also make it easier to have a payment system that works internationally.
+
+R14: Restaurants must pay a fee to MTOGO for using the MTOGO system.
+
+R15: Delivery fees for customer orders are calculated on order, and are visible in the order receipt.
+
+R16: In order for a courier to get paid for each delivery, the system calculates reward per order by the basic reward , busy hours factor and distance as shown in the table. The distance reward is counted after first 2000 m
+
+Courier requirements:
+
+R17: A person must be able to sign in as a courier.
+
+R18: Courier must be able to choose to go online in order to be able to pick up orders.
+
+R19: Courier must be able to choose one area to work within.
+
+R20: Courier must be able to see delivery tasks available to be picked up from restaurants.
+
+R21: Courier must be able to see information about pickup and drop off (locations of both the restaurant and the customer, live updates on pickup and delivery time, task distance).
+
+R22: Courier must be able to provide transportation type in order to estimate delivery time
+
+R23: Courier must be able to claim an order to pick up.
+
+R24: Courier must be able to check all items of the order that is being picked up at the restaurant and approve it.
+
+R25: Courier must be able to set the order as delivered to the customer if the courier is within 500 m from the delivery destination.
+
+R26: Courier must be able to cancel the claimed order pickup by providing the cancelation reason to the area manager.
+
+R27: Courier must be able to view his/hers  stats by current day, week, month or by custom settings. 
+
+R28: A person must be able to sign up as a courier.
+
+Management requirements:
+
+R29: Managers are able to view a dashboard of orders which will contain information about all orders in the system. 
+
+R30: If, for any reason, orders are not chosen by couriers to deliver within 5 minutes, then the manager will get a notification about the order.
   
 ### 7.0 Design and diagrams
 short description of our thoughts  
