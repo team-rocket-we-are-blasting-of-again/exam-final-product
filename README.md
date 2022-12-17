@@ -37,7 +37,13 @@ also link to our video here
 also link to our deployment here  
 
 ### 2.0 Repositories
-link to all our repositories that were used to make our system  
+link to all our repositories that were used to make our system 
+#### 2.1 Microservices
+1. Customer Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service
+2. Order Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-order-service
+3. Courier Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-courier-service
+4. Restaurant Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-service
+5. 
 
 ### 3.0 Getting started  
 how to run the project (could be local or in the cloud)
@@ -86,6 +92,23 @@ describe the integration patterns that are used through our system (this will gi
 ### 10.0 Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
+#### Rust  
+* Rust 1.67-nightly 
+* Cargo-mutants 1.2.0 
+* Tarpaulin 0.22.0 
+* Rocket 0.5.0-rc.2 
+* Tokio 1.0.0 
+* Tonic 0.8.2 
+#### Java  
+* Java 17 
+* Spring boot 2.7.5 
+* Junit 5.8.1 
+* grpc 1.49.2 
+* Surefire 2.22.2 
+* pitest 1.9.6 
+* mockito 4.3.1 
+#### Database  
+* Postgresql 15.1
   
 ### 11.0 Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
