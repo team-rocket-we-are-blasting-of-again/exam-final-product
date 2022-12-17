@@ -13,7 +13,7 @@
 ### Table of content
 1. [Introduction](#Introduction)
       
-### 1.0 Introduction    
+### Introduction    
 introduce the project and our task  
   
 also link to our video here
