@@ -11,7 +11,7 @@
 - Tobias Zimmermann cph-tz11@cphbusiness.dk
 
 ### Table of content
-1. [Introduction](#1.0-Introduction)
+1. [Introduction](#Introduction)
 2. [Repositories](#2.0-Repositories)
 3. [Getting-started](#3.0-Getting-started)
    1. [Environments](#3.1-Environments)
@@ -30,7 +30,7 @@
 12. [Version history](#12.0-Version-history)
 13. [Reflection](#13.0-Reflection)
      
-### 1.0 Introduction     
+### Introduction     
 MTOGO A/S is seeking to replace its current system since it is now insufficient. The reasoning behind this is because the old system is monolithic in architecture. As MTOGO is growing internationally as a business, they need to future proof their business by becoming scalable and reliable in multiple locations.
   
 also link to our video here
