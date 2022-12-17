@@ -11,32 +11,32 @@
 - Tobias Zimmermann cph-tz11@cphbusiness.dk
 
 ### Table of content
-1. [Introduction](#1.0-Introduction)
-2. [Repositories](#2.0-Repositories)
-3. [Getting-started](#3.0-Getting-started)
-   1. [Environments](#3.1-Environments)
-   2. [How to use the project](#3.2-How-to-use-the-project)
-4. [Legacy system](#4.0-Legacy-system)
-5. [Business cases](#5.0-Business-cases)
-6. [Functional requirements](#6.0-Functional-requirements)
-7. [Design and diagrams](#7.0-Design-and-diagrams)
-   1. [Domain models](#7.1-Domain-models)
-   2. [C4 models](#7.2-C4-models)
-   3. [Diagrams](#7.3-Diagrams)
-8. [Architecture](#8.0-Architecture)
-9. [System integration patterns](#9.0-System-integration-patterns)
-10. [Technologies](#10.0-Technologies)
-11. [Mandatory feature requirements](#11.0-Mandatory-feature-requirements)
-12. [Version history](#12.0-Version-history)
-13. [Reflection](#13.0-Reflection)
+1. [Introduction](#Introduction)
+2. [Repositories](#Repositories)
+3. [Getting-started](#Getting-started)
+   1. [Environments](#Environments)
+   2. [How to use the project](#How-to-use-the-project)
+4. [Legacy system](#Legacy-system)
+5. [Business cases](#Business-cases)
+6. [Functional requirements](#Functional-requirements)
+7. [Design and diagrams](#Design-and-diagrams)
+   1. [Domain models](#Domain-models)
+   2. [C4 models](#C4-models)
+   3. [Diagrams](#Diagrams)
+8. [Architecture](#Architecture)
+9. [System integration patterns](#System-integration-patterns)
+10. [Technologies](#Technologies)
+11. [Mandatory feature requirements](#Mandatory-feature-requirements)
+12. [Version history](#Version-history)
+13. [Reflection](#Reflection)
      
-### 1.0 Introduction     
+### Introduction     
 MTOGO A/S is seeking to replace its current system since it is now insufficient. The reasoning behind this is because the old system is monolithic in architecture. As MTOGO is growing internationally as a business, they need to future proof their business by becoming scalable and reliable in multiple locations.
   
 also link to our video here
 also link to our deployment here  
 
-### 2.0 Repositories
+### Repositories
 The following is a list of all the current and future github repositories that was/will be used to develop the MTOGO Food Delivery System.
 
 #### Microservices
@@ -70,22 +70,22 @@ The following is a list of all the current and future github repositories that w
 1. Payment Processor: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-processor
 2. Payment Validator: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-validator
 
-### 3.0 Getting started  
+### Getting started  
 how to run the project (could be local or in the cloud)
 
-#### 3.1 Environments
+#### Environments
 if we show how to run it local we need to describe environments needed
 we could potentially add a postman collection here as well
   
-#### 3.2 How to use the project  
+#### How to use the project  
 if any special requirements are needed to run the project or else delete this part as well
 
-### 4.0 Legacy system  
+### Legacy system  
 Analyze the domain and identify potential problems in existing legacy digital systems at the 
 customer, such as lack of functionality, performance issues, operation difficulties, data 
 storage and transformation issues, customer dissatisfaction, etc.    
     
-### 5.0 Business cases
+### Business cases
 MTOGO A/S wants to expand their current operations by implementing a new system which can handle a higher workload and is able to be distributed internationally. The new system will focus on three main types of users - customers, restaurants, and couriers.
 
 They will be able to make an account in order to use the system. The customers can order food either through the web or a mobile application. The restaurants sign up as food providers either by using the MTOGO API or using the MTOGO provided restaurant application. The couriers can sign up through the MTOGO courier application where they select regions and orders. A courier is viewed as an employee and will be paid based on the amount of orders they deliver.
@@ -97,7 +97,7 @@ Payment will be reserved when a customer makes an order. Customers will pay auto
 Additionally MTOGO management will be able to view all orders in the system through an administration dashboard. Likewise restaurants will be able to view all their orders in a dashboard. All orders will either be accepted or declined by the restaurant. 
 
   
-### 6.0 Requirement specification
+### Requirement specification
 #### Non-Functional
 
 NFR1: The system must be made using a microservice architecture, so as to decouple the services and make the system modular. Making it easier to maintain, test and deploy each service separately.
@@ -190,7 +190,7 @@ R29: Managers are able to view a dashboard of orders which will contain informat
 
 R30: If, for any reason, orders are not chosen by couriers to deliver within 5 minutes, then the manager will get a notification about the order.
   
-### 7.0 Design and diagrams
+### Design and diagrams
 The design of the system was done using the DDD and C4 modeling approaches. The design that was developed had to be visualized for a better understanding overall. The given requirements also produced some diagrams.
 The main artifacts and diagrams that has come from this process include the following:
 
@@ -204,7 +204,7 @@ The main artifacts and diagrams that has come from this process include the foll
 8. Use Case Diagrams
 9. Sequence Diagrams
   
-#### 7.1 Domain models 
+#### Domain models 
 short about DDD and then insert:
 -domains  
 -context maps  
@@ -222,7 +222,7 @@ The following is the DDD Context Map.
 
 This is the context map that was made following the domain model. Here the previously identified subdomains have been placed into contexts, and relationships have been drawn between them. The Notification, Location, and Search subdomains were identified as being useful in several different contexts, and were placed on the map as shared kernels. Also present are lines between contexts, showing the relationships between the different contexts, by designating an upstream and a downstream in the relations.
   
-#### 7.2 C4 models  
+#### C4 models  
 The team has made several domain models of different level of the C4 model. The first being the context level.
 
 ![C4 - Context Model](/images/MTOGO_level1.JPG)
@@ -243,7 +243,7 @@ The third level of the C4 model is meant to describe the components used in each
 
 The forth level of the C4 diagram has not been made by the team, as the team did not see any utility in it.
   
-#### 7.3 Sequence Diagram  
+#### Sequence Diagram  
 -class diagrams  
 -sequence diagrams  
 
@@ -251,15 +251,15 @@ The communication between each microservice in the courier context is shown by t
 
 ![Sequence Diagram 1](/images/Sequence_Displaying_available_delivery_tasks.png) 
   
-### 8.0 Architecture
+### Architecture
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
 -insert overview of the whole system architecture  
 -insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
   
-### 9.0 System integration patterns
+### System integration patterns
 describe the integration patterns that are used through our system (this will give very good points with Dora :smile: )
   
-### 10.0 Technologies  
+### Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
 #### Java  
@@ -280,12 +280,12 @@ Insert all the technologies used to build our system here
 #### Database  
 * Postgresql 15.1
 
-#### other
+#### Other
 * kafka 3.3.1
 * kubernetes 2.13.1
 * camunda 7
   
-### 11.0 Mandatory feature requirements  
+### Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
 how we met each of the requirements.   
    
@@ -339,13 +339,13 @@ b. in Wiseflow, a 10-minute video, where the business cases, problems and soluti
 are discussed, demonstrated, and evaluated by the team members  
   
   
-### 12.0 Version history  
+### Version history  
 link our versions dev -> release here
 - 0.0.1 initial start
 - 0.0.3 removal of bugs and optimization
 - 1.0.0 release to production  
   
-### 13.0 Reflection  
+### Reflection  
 We can reflect over the things we have made or what could have been made here.  
   
 
