@@ -31,7 +31,7 @@
 13. [Reflection](#13.0-Reflection)
       
 ### 1.0 Introduction    
-introduce the project and our task  
+MTOGO A/S is seeking to replace its current system since it is now insufficient. The reasoning behind this is because the old system is monolithic in architecture. As MTOGO is growing internationally as a business, they need to future proof their business by becoming scalable and reliable in multiple locations.
   
 also link to our video here
 also link to our deployment here  
