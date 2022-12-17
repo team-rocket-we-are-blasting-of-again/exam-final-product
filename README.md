@@ -12,23 +12,6 @@
 
 ### Table of content
 1. [Introduction](#1.0-Introduction)
-2. [Repositories](#2.0-Repositories)
-3. [Getting-started](#3.0-Getting-started)
-   1. [Environments](#3.1-Environments)
-   2. [How to use the project](#3.2-How-to-use-the-project)
-4. [Legacy system](#4.0-Legacy-system)
-5. [Business cases](#5.0-Business-cases)
-6. [Functional requirements](#6.0-Functional-requirements)
-7. [Design and diagrams](#7.0-Design-and-diagrams)
-   1. [Domain models](#7.1-Domain-models)
-   2. [C4 models](#7.2-C4-models)
-   3. [Diagrams](#7.3-Diagrams)
-8. [Architecture](#8.0-Architecture)
-9. [System integration patterns](#9.0-System-integration-patterns)
-10. [Technologies](#10.0-Technologies)
-11. [Mandatory feature requirements](#11.0-Mandatory-feature-requirements)
-12. [Version history](#12.0-Version-history)
-13. [Reflection](#13.0-Reflection)
      
 ### 1.0 Introduction     
 MTOGO A/S is seeking to replace its current system since it is now insufficient. The reasoning behind this is because the old system is monolithic in architecture. As MTOGO is growing internationally as a business, they need to future proof their business by becoming scalable and reliable in multiple locations.
