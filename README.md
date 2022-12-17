@@ -7,29 +7,29 @@
 - Frederik Johnsen, cph-fj111@cphbusiness.dk
 - Jean-Poul Leth-Møller, cph-jl360@cphbusiness.dk
 - Mathias Parking, cph-mp525@cphbusiness.dk
-- Magdalena Wawrzak, cph-mw216@cphbusiness.dk
-- Tobias Zimmermann, cph-tz11@cphbusiness.dk
+- Magdalena Wawrzak cph-mw216@cphbusiness.dk
+- Tobias Zimmermann cph-tz11@cphbusiness.dk
 
 ### Table of content
 1. [Introduction](#1.0-Introduction)
 2. [Repositories](#2.0-Repositories)
 3. [Getting-started](#3.0-Getting-started)
-4. [Environments](#3.1-Environments)
-5. [How to use the project](#3.2-How-to-use-the-project)
-6. [Legacy system](#4.0-Legacy-system)
-7. [Business cases](#5.0-Business-cases)
-8. [Functional requirements](#6.0-Functional-requirements)
-9. [Design and diagrams](#7.0-Design-and-diagrams)
-10. [Domain models](#7.1-Domain-models)
-11. [C4 models](#7.2-C4-models)
-12. [Diagrams](#7.3-Diagrams)
-13. [Architecture](#8.0-Architecture)
-14. [System integration patterns](#9.0-System-integration-patterns)
-15. [Technologies](#10.0-Technologies)
-16. [Mandatory feature requirements](#11.0-Mandatory-feature-requirements)
-17. [Version history](#12.0-Version-history)
-18. [Reflection](#13.0-Reflection)
-      
+   1. [Environments](#3.1-Environments)
+   2. [How to use the project](#3.2-How-to-use-the-project)
+4. [Legacy system](#4.0-Legacy-system)
+5. [Business cases](#5.0-Business-cases)
+6. [Functional requirements](#6.0-Functional-requirements)
+7. [Design and diagrams](#7.0-Design-and-diagrams)
+   1. [Domain models](#7.1-Domain-models)
+   2. [C4 models](#7.2-C4-models)
+   3. [Diagrams](#7.3-Diagrams)
+8. [Architecture](#8.0-Architecture)
+9. [System integration patterns](#9.0-System-integration-patterns)
+10. [Technologies](#10.0-Technologies)
+11. [Mandatory feature requirements](#11.0-Mandatory-feature-requirements)
+12. [Version history](#12.0-Version-history)
+13. [Reflection](#13.0-Reflection)
+     
 ### 1.0 Introduction     
 MTOGO A/S is seeking to replace its current system since it is now insufficient. The reasoning behind this is because the old system is monolithic in architecture. As MTOGO is growing internationally as a business, they need to future proof their business by becoming scalable and reliable in multiple locations.
   
