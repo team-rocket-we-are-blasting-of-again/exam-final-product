@@ -248,6 +248,8 @@ The forth level of the C4 diagram has not been made by the team, as the team did
 -sequence diagrams  
 
 The communication between each microservice in the courier context is shown by the connector arrows in the level 2 figure from earlier, but they don’t explain much about what actions are made or how they happen. To explain the details of one of these transactions, the team has used a sequence diagram. Specifically the use case of couriers having delivery tasks displayed to them.
+
+![Sequence Diagram 1](/images/Sequence_Displaying_available_delivery_tasks.png)
   
 ### 8.0 Architecture
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
