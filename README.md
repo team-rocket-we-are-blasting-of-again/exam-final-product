@@ -7,11 +7,11 @@
 - Frederik Johnsen, cph-fj111@cphbusiness.dk
 - Jean-Poul Leth-Møller, cph-jl360@cphbusiness.dk
 - Mathias Parking, cph-mp525@cphbusiness.dk
-- Magdalena Wawrzak cph-mw216@cphbusiness.dk
-- Tobias Zimmermann cph-tz11@cphbusiness.dk
+- Magdalena Wawrzak, cph-mw216@cphbusiness.dk
+- Tobias Zimmermann, cph-tz11@cphbusiness.dk
 
 ### Table of content
-1. [Introduction](#1.0-introduction)
+1. [Introduction](#1.0-Introduction)
 2. [Repositories](#2.0-Repositories)
 3. [Getting-started](#3.0-Getting-started)
    1. [Environments](#3.1-Environments)
