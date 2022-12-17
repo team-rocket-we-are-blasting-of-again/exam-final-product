@@ -11,82 +11,83 @@
 - Tobias Zimmermann cph-tz11@cphbusiness.dk
 
 ### Table of content
-1. [Introduction](#Introduction)
-2. [Repositories](#Repositories)
-3. [Getting-started](#Getting-started)
-  1. [Environments](#Environments)
-  2. [How to use the project](#How to use the project)
-6. [Legacy system](#Legacy system)
-7. [Business cases](#Business cases)
-8. [Functional requirements](#Functional requirements)
-9. [Design and diagrams](#Design and diagrams)
-   1. [Domain models](#Domain models)
-   2. [C4 models](#C4 models)
-   3. [Diagrams](#Diagrams)
-13. [Architecture](#Architecture)
-14. [System integration patterns](#System integration patterns)
-15. [Mandatory feature requirements](#Mandatory feature requirements)
-16. [Version history](#Version history)
-17. [Reflection](#Reflection)
+1. [Introduction](#1.0-Introduction)
+2. [Repositories](#2.0-Repositories)
+3. [Getting-started](#3.0-Getting-started)
+   1. [Environments](#3.1-Environments)
+   2. [How to use the project](#3.2-How-to-use-the-project)
+4. [Legacy system](#4.0-Legacy-system)
+5. [Business cases](#5.0-Business-cases)
+6. [Functional requirements](#6.0-Functional-requirements)
+7. [Design and diagrams](#7.0-Design-and-diagrams)
+   1. [Domain models](#7.1-Domain-models)
+   2. [C4 models](#7.2-C4-models)
+   3. [Diagrams](#7.3-Diagrams)
+8. [Architecture](#8.0-Architecture)
+9. [System integration patterns](#9.0-System-integration-patterns)
+10. [Technologies](#10.0-Technologies)
+11. [Mandatory feature requirements](#11.0-Mandatory-feature-requirements)
+12. [Version history](#12.0-Version-history)
+13. [Reflection](#13.0-Reflection)
       
-### Introduction    
+### 1.0 Introduction    
 introduce the project and our task  
   
 also link to our video here
 also link to our deployment here  
 
-### Repositories
+### 2.0 Repositories
 link to all our repositories that were used to make our system  
 
-### Getting started  
+### 3.0 Getting started  
 how to run the project (could be local or in the cloud)
 
-#### Environments
+#### 3.1 Environments
 if we show how to run it local we need to describe environments needed
 we could potentially add a postman collection here as well
   
-#### How to use the project  
+#### 3.2 How to use the project  
 if any special requirements are needed to run the project or else delete this part as well
 
-### Legacy system  
+### 4.0 Legacy system  
 Analyze the domain and identify potential problems in existing legacy digital systems at the 
 customer, such as lack of functionality, performance issues, operation difficulties, data 
 storage and transformation issues, customer dissatisfaction, etc.    
     
-### Business cases
+### 5.0 Business cases
 insert our already made business cases which is the foundation of our work  
   
-### Functional requirements  
+### 6.0 Functional requirements  
 Insert the function and nonfunctional requirements that were made    
   
-### Design and diagrams
+### 7.0 Design and diagrams
 short description of our thoughts  
   
-#### Domain models 
+#### 7.1 Domain models 
 short about DDD and then insert:
 -domains  
 -context maps  
 -ubigitous language 
   
-#### C4 models  
+#### 7.2 C4 models  
   
-#### Diagrams  
+#### 7.3 Diagrams  
 -class diagrams  
 -sequence diagrams  
   
-### Architecture
+### 8.0 Architecture
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
 -insert overview of the whole system architecture  
 -insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
   
-### System integration patterns
+### 9.0 System integration patterns
 describe the integration patterns that are used through our system (this will give very good points with Dora :smile: )
   
-### Technologies  
+### 10.0 Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
   
-### Mandatory feature requirements  
+### 11.0 Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
 how we met each of the requirements.   
    
@@ -140,13 +141,13 @@ b. in Wiseflow, a 10-minute video, where the business cases, problems and soluti
 are discussed, demonstrated, and evaluated by the team members  
   
   
-### Version history  
+### 12.0 Version history  
 link our versions dev -> release here
 - 0.0.1 initial start
 - 0.0.3 removal of bugs and optimization
 - 1.0.0 release to production  
   
-### Reflection  
+### 13.0 Reflection  
 We can reflect over the things we have made or what could have been made here.  
   
 
