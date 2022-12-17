@@ -214,9 +214,34 @@ The domain model that was produced from the DDD process gives an overview of the
 
 ![DDD - Domain Model](/images/domain-model.png)
 
+This is the initial domain model, where the subdomains were identified. There is, notably, a large amount of subdomains, which is why the team decided to focus in on a few core subdomains in order to meet the deadline, namely the Customer, Courier, Restaurant, and Order subdomains, as these were deemed the most central parts of the system.
 
+The following is the DDD Context Map.
+
+![DDD - Context Map](/images/context-map.png)
+
+This is the context map that was made following the domain model. Here the previously identified subdomains have been placed into contexts, and relationships have been drawn between them. The Notification, Location, and Search subdomains were identified as being useful in several different contexts, and were placed on the map as shared kernels. Also present are lines between contexts, showing the relationships between the different contexts, by designating an upstream and a downstream in the relations.
   
 #### 7.2 C4 models  
+The team has made several domain models of different level of the C4 model. The first being the context level.
+
+![C4 - Context Model](/images/MTOGO_level1.JPG)
+
+The diagram shown in the above figure was mainly used to deepen the understanding of the system context, the actors, and the external systems that would need to be integrated. The legacy system of the MTOGO business is also shown here and how it’s supposed to integrate with the new system. The new MTOGO system was made using a microservice architecture, and by using the Container diagram of the C4 model, they could visualize how the different services would communicate.
+
+A Container diagram for each actor and their respective sub-contexts, was also made.
+
+![C4 - Container Model](/images/Courier_Level2.png)
+
+This diagram is meant to visualize the services that are integrated with any actions made by a courier user. This diagram was made to visualize what services would need to be made in order for the system to be optimally functional.
+
+The last C4 model that was drawn for purposes of explaining the subsystems and architecture is level 3 visualizing the Order Service.
+
+![C4 - Component Model](/images/OrderServicelvl3.png)
+
+The third level of the C4 model is meant to describe the components used in each container. The Component diagram in the above figure was made later in the process, as this would allow us to make a more precise model of what components the service would have.
+
+The forth level of the C4 diagram has not been made by the team, as the team did not see any utility in it.
   
 #### 7.3 Diagrams  
 -class diagrams  
