@@ -191,13 +191,30 @@ R29: Managers are able to view a dashboard of orders which will contain informat
 R30: If, for any reason, orders are not chosen by couriers to deliver within 5 minutes, then the manager will get a notification about the order.
   
 ### 7.0 Design and diagrams
-short description of our thoughts  
+The design of the system was done using the DDD and C4 modeling approaches. The design that was developed had to be visualized for a better understanding overall. The given requirements also produced some diagrams.
+The main artifacts and diagrams that has come from this process include the following:
+
+1. Architectural diagram
+2. DDD Domain Model
+3. DDD Context map
+4. Event Storming Drawing
+5. Context diagram - C4 level 1
+6. Container diagram - C4 level 2
+7. Component diagram - C4 level 3
+8. Use Case Diagrams
+9. Sequence Diagrams
   
 #### 7.1 Domain models 
 short about DDD and then insert:
 -domains  
 -context maps  
 -ubigitous language 
+
+The domain model that was produced from the DDD process gives an overview of the domain as it was defined during initial phases of development.
+
+![DDD - Domain Model](/images/domain-model.png)
+
+
   
 #### 7.2 C4 models  
   
