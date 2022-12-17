@@ -11,7 +11,7 @@
 - Tobias Zimmermann, cph-tz11@cphbusiness.dk
 
 ### Table of content
-1. [Introduction](#1.0-Introduction)
+1. [Introduction](#Introduction)
 2. [Repositories](#2.0-Repositories)
 3. [Getting-started](#3.0-Getting-started)
    1. [Environments](#3.1-Environments)
