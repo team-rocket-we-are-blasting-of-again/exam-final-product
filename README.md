@@ -11,7 +11,7 @@
 - Tobias Zimmermann cph-tz11@cphbusiness.dk
 
 ### Table of content
-link to each of our sections in this readme with a header
+1. [Introduction](#Introduction)
       
 ### 1.0 Introduction    
 introduce the project and our task  
