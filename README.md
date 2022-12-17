@@ -37,13 +37,38 @@ also link to our video here
 also link to our deployment here  
 
 ### 2.0 Repositories
-link to all our repositories that were used to make our system 
-#### 2.1 Microservices
+The following is a list of all the current and future github repositories that was/will be used to develop the MTOGO Food Delivery System.
+
+#### Microservices
 1. Customer Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service
 2. Order Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-order-service
 3. Courier Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-courier-service
 4. Restaurant Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-service
-5. 
+5. Authentication Service: https://github.com/team-rocket-we-are-blasting-of-again/exam_auth_service
+6. Payment Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-service
+7. Notification Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-notification-service
+8. API Gateway: https://github.com/team-rocket-we-are-blasting-of-again/exam-api-gateway
+9. Camunda Server: https://github.com/team-rocket-we-are-blasting-of-again/exam-camunda-server
+
+#### DevOps
+1. Gateway Subscription: https://github.com/team-rocket-we-are-blasting-of-again/exam-gateway-subscription
+2. GitOps: https://github.com/team-rocket-we-are-blasting-of-again/exam-gitops
+3. Prebuilt Images: https://github.com/team-rocket-we-are-blasting-of-again/exam-prebuilt-images
+4. 
+
+#### Legacy System
+1. Legacy Code: https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-system
+2. Legacy Translator: https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-translator
+
+
+#### Frontend
+1. Frontend Client: https://github.com/team-rocket-we-are-blasting-of-again/exam-client
+2. Restaurant Client: https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-client
+3. Transaction Client: https://github.com/team-rocket-we-are-blasting-of-again/exam-transaction-client
+
+### Other
+1. Payment Processor: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-processor
+2. Payment Validator: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-validator
 
 ### 3.0 Getting started  
 how to run the project (could be local or in the cloud)
@@ -109,6 +134,11 @@ Insert all the technologies used to build our system here
 * Tonic 0.8.2 
 #### Database  
 * Postgresql 15.1
+
+#### other
+* kafka 3.3.1
+* kubernetes 2.13.1
+* camunda 7
   
 ### 11.0 Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
