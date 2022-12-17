@@ -92,13 +92,6 @@ describe the integration patterns that are used through our system (this will gi
 ### 10.0 Technologies  
 Insert all the technologies used to build our system here
 (dbs, frameworks, data sources, system management)  
-#### Rust  
-* Rust 1.67-nightly 
-* Cargo-mutants 1.2.0 
-* Tarpaulin 0.22.0 
-* Rocket 0.5.0-rc.2 
-* Tokio 1.0.0 
-* Tonic 0.8.2 
 #### Java  
 * Java 17 
 * Spring boot 2.7.5 
@@ -107,6 +100,13 @@ Insert all the technologies used to build our system here
 * Surefire 2.22.2 
 * pitest 1.9.6 
 * mockito 4.3.1 
+#### Rust  
+* Rust 1.67-nightly 
+* Cargo-mutants 1.2.0 
+* Tarpaulin 0.22.0 
+* Rocket 0.5.0-rc.2 
+* Tokio 1.0.0 
+* Tonic 0.8.2 
 #### Database  
 * Postgresql 15.1
   
