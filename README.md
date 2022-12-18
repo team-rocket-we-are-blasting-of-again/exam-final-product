@@ -69,16 +69,26 @@ The following is a list of all the current and future github repositories that w
 ### Other
 1. Payment Processor: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-processor
 2. Payment Validator: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-validator
+3. Transaction Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-transaction-service
 
 ### Getting started  
-how to run the project (could be local or in the cloud)
+In order to run this application locally it is required to have docker deamon installed and running. We recommend using Docker desktop.
+
 
 #### Environments
-if we show how to run it local we need to describe environments needed
-we could potentially add a postman collection here as well
+The whole system can be run as docker components with whe command runned from root of this directory :
+
+
+* ```shell
+    docker-compose up -d
+    ```  
   
 #### How to use the project  
-if any special requirements are needed to run the project or else delete this part as well
+
+Once the docker container is up and runnig, verify if the auth-, restaurant-, courier- and customer-services have subscribed to the gateway api by calling ``localhost:9999/gateway/route``. Response should contain 6 JSON-objects.
+
+To access the services, use this:
+[Local Postman collection](https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/MTOGO.postman_collection.json)  
 
 ### Legacy system  
 Analyze the domain and identify potential problems in existing legacy digital systems at the 
