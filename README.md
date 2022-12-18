@@ -37,7 +37,7 @@ also link to our video here
 also link to our deployment here  
 
 ### Repositories
-The following is a list of all the current and future github repositories that was/will be used to develop the MTOGO Food Delivery System.
+The following is a list of all the current and future github repositories that was used to develop the MTOGO Food Delivery System.
 
 #### Microservices
 1. Customer Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service
@@ -54,7 +54,7 @@ The following is a list of all the current and future github repositories that w
 1. Gateway Subscription: https://github.com/team-rocket-we-are-blasting-of-again/exam-gateway-subscription
 2. GitOps: https://github.com/team-rocket-we-are-blasting-of-again/exam-gitops
 3. Prebuilt Images: https://github.com/team-rocket-we-are-blasting-of-again/exam-prebuilt-images
-4. 
+4. [Docker Hub](https://hub.docker.com/u/tobiaszimmer)
 
 #### Legacy System
 1. Legacy Code: https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-system
@@ -215,10 +215,7 @@ The main artifacts and diagrams that has come from this process include the foll
 9. Sequence Diagrams
   
 #### Domain models 
-short about DDD and then insert:
--domains  
--context maps  
--ubigitous language 
+Domain Driven Design
 
 The domain model that was produced from the DDD process gives an overview of the domain as it was defined during initial phases of development.
 
@@ -254,8 +251,7 @@ The third level of the C4 model is meant to describe the components used in each
 The forth level of the C4 diagram has not been made by the team, as the team did not see any utility in it.
   
 #### Sequence Diagram  
--class diagrams  
--sequence diagrams  
+-class diagrams MISSING 
 
 The communication between each microservice in the courier context is shown by the connector arrows in the level 2 figure from earlier, but they don’t explain much about what actions are made or how they happen. To explain the details of one of these transactions, the team has used a sequence diagram. Specifically the use case of couriers having delivery tasks displayed to them.
 
@@ -265,6 +261,10 @@ The communication between each microservice in the courier context is shown by t
 Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
 -insert overview of the whole system architecture  
 -insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
+
+![Architecture](/images/Architecture.png) 
+
+![Service architecture](/images/folder-structure.png) MISSING 
   
 ### System integration patterns
 The Enterprice Integration patters that has been made use of throughout this project are the following:
@@ -285,8 +285,8 @@ The Enterprice Integration patters that has been made use of throughout this pro
 - Format Indicator
   
 ### Technologies  
-Insert all the technologies used to build our system here
-(dbs, frameworks, data sources, system management)  
+The following is a list of the used technologies:  
+    
 #### Java  
 * Java 17 
 * Spring boot 2.7.5 
@@ -294,14 +294,16 @@ Insert all the technologies used to build our system here
 * grpc 1.49.2 
 * Surefire 2.22.2 
 * pitest 1.9.6 
-* mockito 4.3.1 
+* mockito 4.3.1   
+  
 #### Rust  
 * Rust 1.67-nightly 
 * Cargo-mutants 1.2.0 
 * Tarpaulin 0.22.0 
 * Rocket 0.5.0-rc.2 
 * Tokio 1.0.0 
-* Tonic 0.8.2 
+* Tonic 0.8.2  
+  
 #### Database  
 * Postgresql 15.1
 * redis:6.2-alpine
@@ -310,11 +312,11 @@ Insert all the technologies used to build our system here
 * kafka 3.3.1
 * kubernetes 2.13.1
 * camunda 7
-  
+    
 ### Mandatory feature requirements  
 The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
-how we met each of the requirements.   
-   
+how we met each of the requirements. 
+     
 The software system integrates a variety of disparate applications, components, and data sources
 of three types: 
   
@@ -366,7 +368,8 @@ are discussed, demonstrated, and evaluated by the team members
   
   
 ### Version history  
-link our versions dev -> release here
+Version history from initial build to release:  
+
 - 0.0.1 initial start
 - 0.0.3 removal of bugs and optimization
 - 1.0.0 release to production  
