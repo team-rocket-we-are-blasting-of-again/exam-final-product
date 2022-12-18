@@ -42,8 +42,7 @@ A link to our deployed Kubernetes cluster: [Deployment](https://jplm.dk/) :cloud
 The following is a list of all the current and future github repositories that was used to develop the MTOGO Food Delivery System.
 
 #### Microservices
-	[title](https://www.example.com) TO EVERYTHING BELOW  
-
+  
 1. [Customer Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service)
 2. [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-order-service)
 3. [Courier Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-courier-service)
@@ -56,29 +55,28 @@ The following is a list of all the current and future github repositories that w
 
 #### DevOps
 1. [Gateway Subscription](https://github.com/team-rocket-we-are-blasting-of-again/exam-gateway-subscription)
-2. GitOps: https://github.com/team-rocket-we-are-blasting-of-again/exam-gitops
-3. Prebuilt Images: https://github.com/team-rocket-we-are-blasting-of-again/exam-prebuilt-images
+2. [GitOps](https://github.com/team-rocket-we-are-blasting-of-again/exam-gitops)
+3. [Prebuilt Images](https://github.com/team-rocket-we-are-blasting-of-again/exam-prebuilt-images)
 4. [Docker Hub](https://hub.docker.com/u/tobiaszimmer)
 
 #### Legacy System
-1. Legacy Code: https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-system
-2. Legacy Translator: https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-translator
+1. [Legacy Code](https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-system)
+2. [Legacy Translator](https://github.com/team-rocket-we-are-blasting-of-again/exam-legacy-translator)
 
 
 #### Frontend
-1. Frontend Client: https://github.com/team-rocket-we-are-blasting-of-again/exam-client
-2. Restaurant Client: https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-client
-3. Transaction Client: https://github.com/team-rocket-we-are-blasting-of-again/exam-transaction-client
+1. [Frontend Client](https://github.com/team-rocket-we-are-blasting-of-again/exam-client)
+2. [Restaurant Client](https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-client)
+3. [Transaction Client](https://github.com/team-rocket-we-are-blasting-of-again/exam-transaction-client)
 
 ### Other
-1. Payment Processor: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-processor
-2. Payment Validator: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-validator
-3. Transaction Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-transaction-service
+1. [Payment Processor](https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-processor)
+2. [Payment Validator](https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-validator)
+3. [Transaction Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-transaction-service)
 
 ### Getting started  
 In order to run this application locally it is required to have docker deamon installed and running. We recommend using Docker desktop.
-
-
+  
 #### Environments
 The whole system can be run as docker components with whe command runned from root of this directory :
 
