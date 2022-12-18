@@ -373,14 +373,10 @@ Version history from initial build to release:
 - 1.0.9 [final release](https://hub.docker.com/layers/tobiaszimmer/exam-customer-service/kafka_fail-1.0.9-RELEASE/images/sha256-c41b387e71fe79651d598c711643c601dafc2221237fdcd91d34624707019161?context=explore)  
   
 ### Reflection  
-We can reflect over the things we have made or what could have been made here.  
-  
-
-
-
-   
- 
-
+Process of implementing MTOGO system has resulted in better understanding of the integration patterns as well as made it possible to practice usage and implementation of the technologies used in the project. 
+As a team of students with no professional experience we were able to build a functional product in just few weeks. 
+We can conclude that the essential subject which is the integration of system requires good planing and understanding of the requirements given by the stakeholders. 
+We have learned that establishing and testing communication between different micro-services should be implemented from the very beginning of the manufacturing process.
 
 
 
