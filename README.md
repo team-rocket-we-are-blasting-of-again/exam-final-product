@@ -367,9 +367,10 @@ are discussed, demonstrated, and evaluated by the team members
 ### Version history  
 Version history from initial build to release:  
 
-- 0.0.1 initial start
-- 0.0.3 removal of bugs and optimization
-- 1.0.0 release to production  
+- 0.0.1 [initial start](https://hub.docker.com/layers/tobiaszimmer/exam-customer-service/feature-green-pipeline-0.0.1-snapshot/images/sha256-59eb699b9f16e79960b432f0b16c6b904cb6eb8ed18449d46e3d1b3298154d07?context=explore)  
+- 0.0.1 [event feature added](https://hub.docker.com/layers/tobiaszimmer/exam-customer-service/feature-kafka-events-0.0.1-snapshot/images/sha256-ab81dee71cb424fa74f415a1e28bde1c080cc04703ac9fab54a180c797af1b15?context=explore)  
+- 1.0.0 [release to production](https://hub.docker.com/layers/tobiaszimmer/exam-customer-service/main-1.0.0-RELEASE/images/sha256-d629e1843d9282c59f23b1d6fd1db715b7409080332768c1c79f98ece8c8223b?context=explore)  
+- 1.0.9 [final release](https://hub.docker.com/layers/tobiaszimmer/exam-customer-service/kafka_fail-1.0.9-RELEASE/images/sha256-c41b387e71fe79651d598c711643c601dafc2221237fdcd91d34624707019161?context=explore)  
   
 ### Reflection  
 We can reflect over the things we have made or what could have been made here.  
