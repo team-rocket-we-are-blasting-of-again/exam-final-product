@@ -233,7 +233,8 @@ This is the context map that was made following the domain model. Here the previ
   
 Concurrently with this there was made an event storming to further give us an overview of domains and how the flow of an order through the system could look like.  
   
-![DDD - Event Storming](/images/EventStorming.jpg =250x250)
+
+<img src="https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/images/EventStorming.jpg" width="100" height="100">
   
 #### C4 models  
 The team has made several domain models of different level of the C4 model. The first being the context level.
