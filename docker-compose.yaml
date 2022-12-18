@@ -211,7 +211,7 @@ services:
         condition: service_healthy
       gateway:
         condition: service_healthy
-    image: tobiaszimmer/exam-restaurant-service:feature-fix-1.0.8-release
+    image: tobiaszimmer/exam-restaurant-service:feature-fix-1.0.10-release
     restart: on-failure
     environment:
       RESTAURANT_SERVICE_DB: "jdbc:postgresql://restaurant_db:5432/restaurants"
@@ -262,7 +262,7 @@ services:
         condition: service_healthy
       gateway:
         condition: service_healthy
-    image: tobiaszimmer/exam-courier-service:cors-1.1.5-RELEASE
+    image: tobiaszimmer/exam-courier-service:cors-1.1.6-RELEASE
     restart: on-failure
     environment:
       GATEWAY_USERNAME: "gate_us"
