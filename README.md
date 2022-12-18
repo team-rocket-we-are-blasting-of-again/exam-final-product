@@ -251,8 +251,6 @@ The third level of the C4 model is meant to describe the components used in each
 The forth level of the C4 diagram has not been made by the team, as the team did not see any utility in it.
   
 #### Sequence Diagram  
--class diagrams MISSING 
-
 The communication between each microservice in the courier context is shown by the connector arrows in the level 2 figure from earlier, but they don’t explain much about what actions are made or how they happen. To explain the details of one of these transactions, the team has used a sequence diagram. Specifically the use case of couriers having delivery tasks displayed to them.
 
 ![Sequence Diagram 1](/images/Sequence_Displaying_available_delivery_tasks.png) 
@@ -365,8 +363,7 @@ architectural diagram of the whole system and its components is a must.
 
 b. in Wiseflow, a 10-minute video, where the business cases, problems and solutions
 are discussed, demonstrated, and evaluated by the team members  
-  
-  
+     
 ### Version history  
 Version history from initial build to release:  
 
