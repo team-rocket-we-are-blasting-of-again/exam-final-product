@@ -316,40 +316,38 @@ The following is a list of the used technologies:
 ### Mandatory feature requirements    
 Required checklist delivered from our teacher.  
      
-*The software system integrates a variety of disparate applications, components, and data sources
-of three types:*   
-  
-**It Is a Composite System**   
+**It Is a Composite System**  
+The software system integrates a variety of disparate applications, components, and data sources
+of three types:     
 a. ~~monolithic~~ or legacy application :heavy_check_mark:   
-b. web services :heavy_check_mark: or ~~service-oriented application~~ 
+b. web services :heavy_check_mark: or ~~service-oriented application~~   
 c. microservices architecture application  :heavy_check_mark:  
   
-It Has Business Context  
-The integration architecture design reflects the business context:  
-a. implements domain-driven design  
-b. applies BPM approach  
-c. implements enterprise integration patterns  
-d. enables storage, integration and transformation of various data sources  
+**It Has Business Context**    
+The integration architecture design reflects the business context:    
+a. implements domain-driven design :heavy_check_mark:     
+b. applies BPM approach :heavy_check_mark:    
+c. implements enterprise integration patterns :heavy_check_mark:      
+d. enables storage, integration and transformation of various data sources :heavy_check_mark:      
   
-Solution Applies Integration Technologies  
+**Solution Applies Integration Technologies**    
 The development implements a variety of integration and communication techniques introduced 
-in class, such as:  
-a. APIs and API Gateways  
-b. SOA and MOM  
-c. data and event streaming platforms  
-d. process automation platforms  
-e. microservices composition, discovery, and management tools  
+in class, such as:    
+a. APIs and API Gateways :heavy_check_mark:    
+b. SOA and MOM :heavy_check_mark:    
+c. data and event streaming platforms :heavy_check_mark:    
+d. process automation platforms :heavy_check_mark:    
+e. microservices composition, discovery, and management tools :heavy_check_mark:    
   
-Solution Implements Quality Standards and Best Practices  
+**Solution Implements Quality Standards and Best Practices**    
 The product illustrates implementation of  
-a. integration standards  
-b. decoupling and configuration of components  
-c. synchronous and asynchronous interaction styles  
-d. best use of network technologies and Internet  
+a. integration standards :heavy_check_mark:   
+b. decoupling and configuration of components :heavy_check_mark:    
+c. synchronous and asynchronous interaction styles :heavy_check_mark:    
+d. best use of network technologies and Internet :heavy_check_mark:    
 e. object-oriented programming, variety of programming languages and development 
-platforms  
-You can consider the Twelve-Factor App recommendations.  
-  
+platforms :heavy_check_mark:       
+    
 Client Applications  
 There is no specific requirement for developing client applications.  
 a. publicly available instruments, such as Postman, curl, console CLI, and web browsers, 
