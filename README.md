@@ -78,7 +78,7 @@ The following is a list of all the current and future github repositories that w
 In order to run this application locally it is required to have docker deamon installed and running. We recommend using Docker desktop.
   
 #### Environments
-The whole system can be run as docker components with the following command written from root of the directory:  
+The whole system can be run as docker components with the following command written from the root of the directory:  
 
 
 * ```shell
