@@ -256,14 +256,14 @@ The communication between each microservice in the courier context is shown by t
 ![Sequence Diagram 1](/images/Sequence_Displaying_available_delivery_tasks.png) 
   
 ### Architecture
-Short aboout our thoughts and why we went with the current solution (has to include microservice structure and event driven structure)  
--insert overview of the whole system architecture  
--insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
-
-![Architecture](/images/Architecture.png) 
-
-![Service architecture](/images/folder-structure.png) MISSING 
+We have made an architecture style which implements microservice architecture with and event-driven architecture:  
   
+![Architecture](/images/Architecture.png)   
+  
+Each service if build with a hexagonal architecture:  
+  
+![Service architecture](/images/folder-structure.png)   
+      
 ### System integration patterns
 The Enterprice Integration patters that has been made use of throughout this project are the following:
 
