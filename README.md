@@ -231,9 +231,9 @@ The following is the DDD Context Map.
 
 This is the context map that was made following the domain model. Here the previously identified subdomains have been placed into contexts, and relationships have been drawn between them. The Notification, Location, and Search subdomains were identified as being useful in several different contexts, and were placed on the map as shared kernels. Also present are lines between contexts, showing the relationships between the different contexts, by designating an upstream and a downstream in the relations.  
   
-Concurrently with this there was made an event planning to further give us an overview of domains and how the flow of an order through the system could look like.  
+Concurrently with this there was made an event storming to further give us an overview of domains and how the flow of an order through the system could look like.  
   
-![DDD - Event Storming](/images/EventStorming.jpg)
+![DDD - Event Storming](/images/EventStorming.jpg =250x250)
   
 #### C4 models  
 The team has made several domain models of different level of the C4 model. The first being the context level.
@@ -294,11 +294,11 @@ The following is a list of the used technologies:
 #### Java  
 * Java 17 
 * Spring boot 2.7.5 
-* Junit 5.8.1 
-* grpc 1.49.2 
+* JUnit 5.8.1 
+* gRPC 1.49.2 
 * Surefire 2.22.2 
-* pitest 1.9.6 
-* mockito 4.3.1   
+* PiTest 1.9.6 
+* Mockito 4.3.1   
   
 #### Rust  
 * Rust 1.67-nightly 
