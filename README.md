@@ -35,12 +35,14 @@ MTOGO A/S is seeking to replace its current system since it is now insufficient.
   
 A video presentation can be found here:  [System presentation](https://www.youtube.com/watch?v=lLA2O8guRCU&ab_channel=Riisager)  
   
-A link to our deployed Kubernetes cluster: [Deployment](https://jplm.dk/) :cloud:  
+A link to our deployed Kubernetes cluster (is down during the holiday because of pricing :moneybag:): [Deployment](https://jplm.dk/) :cloud:  
   
 ### Repositories
 The following is a list of all the current and future github repositories that was used to develop the MTOGO Food Delivery System.
 
 #### Microservices
+	[title](https://www.example.com) TO EVERYTHING BELOW  
+
 1. Customer Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service
 2. Order Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-order-service
 3. Courier Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-courier-service
