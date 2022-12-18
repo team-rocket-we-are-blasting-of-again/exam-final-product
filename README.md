@@ -44,18 +44,18 @@ The following is a list of all the current and future github repositories that w
 #### Microservices
 	[title](https://www.example.com) TO EVERYTHING BELOW  
 
-1. Customer Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service
-2. Order Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-order-service
-3. Courier Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-courier-service
-4. Restaurant Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-service
-5. Authentication Service: https://github.com/team-rocket-we-are-blasting-of-again/exam_auth_service
-6. Payment Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-service
-7. Notification Service: https://github.com/team-rocket-we-are-blasting-of-again/exam-notification-service
-8. API Gateway: https://github.com/team-rocket-we-are-blasting-of-again/exam-api-gateway
-9. Camunda Server: https://github.com/team-rocket-we-are-blasting-of-again/exam-camunda-server
+1. [Customer Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-customer-service)
+2. [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-order-service)
+3. [Courier Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-courier-service)
+4. [Restaurant Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-restaurant-service)
+5. [Authentication Service](https://github.com/team-rocket-we-are-blasting-of-again/exam_auth_service)
+6. [Payment Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-payment-service)
+7. [Notification Service](https://github.com/team-rocket-we-are-blasting-of-again/exam-notification-service)
+8. [API Gateway](https://github.com/team-rocket-we-are-blasting-of-again/exam-api-gateway)
+9. [Camunda Server](https://github.com/team-rocket-we-are-blasting-of-again/exam-camunda-server)
 
 #### DevOps
-1. Gateway Subscription: https://github.com/team-rocket-we-are-blasting-of-again/exam-gateway-subscription
+1. [Gateway Subscription](https://github.com/team-rocket-we-are-blasting-of-again/exam-gateway-subscription)
 2. GitOps: https://github.com/team-rocket-we-are-blasting-of-again/exam-gitops
 3. Prebuilt Images: https://github.com/team-rocket-we-are-blasting-of-again/exam-prebuilt-images
 4. [Docker Hub](https://hub.docker.com/u/tobiaszimmer)
@@ -112,97 +112,97 @@ Additionally MTOGO management will be able to view all orders in the system thro
 
   
 ### Requirement specification
-#### Non-Functional
+**Non-Functional**
 
-NFR1: The system must be made using a microservice architecture, so as to decouple the services and make the system modular. Making it easier to maintain, test and deploy each service separately.
+**NFR1:** The system must be made using a microservice architecture, so as to decouple the services and make the system modular. Making it easier to maintain, test and deploy each service separately.
 
-NRF2: The system must use orchestration and container technology, so that the system becomes easily scalable with high availability, on an international scale.
+**NRF2:** The system must use orchestration and container technology, so that the system becomes easily scalable with high availability, on an international scale.
 
-NFR3: The system must make use of an event driven architecture.
+**NFR3:** The system must make use of an event driven architecture.
 
-NFR4: 	The development team must make use of DevOps practices, such as automatic testing, being agile, and generally providing fast deliveries.
+**NFR4:** The development team must make use of DevOps practices, such as automatic testing, being agile, and generally providing fast deliveries.
 
-NFR5: The system must be tested thoroughly before going into production, by using a pre production environment.
+**NFR5:** The system must be tested thoroughly before going into production, by using a pre production environment.
 
-NFR6: The system must be GDPR compliant.
+**NFR6:** The system must be GDPR compliant.
 
-NFR7: The system must have low response times in all supported markets.
+**NFR7:** The system must have low response times in all supported markets.
 
-NFR8: The system must have backups of stored data, such that the data will not be lost in the event of database failure.
+**NFR8:** The system must have backups of stored data, such that the data will not be lost in the event of database failure.
 
 #### Functional
 
-General Requirements :
+**General Requirements:**  
 
-R1: MTOGO requires no data loss when migrating to the new system.
+**R1:** MTOGO requires no data loss when migrating to the new system.
 
-Restaurant requirements:
+**Restaurant requirements:**
 
-R2: Restaurants should be able to integrate with the MTOGO system.
+**R2:** Restaurants should be able to integrate with the MTOGO system.
 
-R3: Restaurants of both big and small sizes should be supported, by allowing small businesses to use an interface for order management system provided by MTOGO, and allowing big businesses to integrate with an API that we expose to them. The system should allow restaurants to view orders, accept or decline orders, and see analytics on their previous orders.
+**R3:** Restaurants of both big and small sizes should be supported, by allowing small businesses to use an interface for order management system provided by MTOGO, and allowing big businesses to integrate with an API that we expose to them. The system should allow restaurants to view orders, accept or decline orders, and see analytics on their previous orders.
 
-Customer requirements:
+**Customer requirements:**
 
-R4: Customers should be able to order food from any of the restaurants that have an integration setup with the MTOGO system provided they are not too far away.
+**R4:** Customers should be able to order food from any of the restaurants that have an integration setup with the MTOGO system provided they are not too far away.
 
-R5: Customers must be able to search for restaurants, through various search criteria, such as restaurant name, food type etc. given that the restaurants are within a certain distance from the customer.
+**R5:** Customers must be able to search for restaurants, through various search criteria, such as restaurant name, food type etc. given that the restaurants are within a certain distance from the customer.
 
-R6: Customers must be able to provide feedback on the courier. This should be feedback on speed of delivery, and general quality of service.
+**R6:** Customers must be able to provide feedback on the courier. This should be feedback on speed of delivery, and general quality of service.
 
-R7: Customers must be able to provide feedback on the restaurant. This should be feedback on quality of food, and interactions with the customer.
+**R7:** Customers must be able to provide feedback on the restaurant. This should be feedback on quality of food, and interactions with the customer.
 
-R8: Customers must receive notifications about their orders’ status in the app. A customer is notified when their order is being prepared, when a delivery estimate is made, when the order is being delivered, when the order has been delivered and when the order is canceled for any reason.
+**R8:** Customers must receive notifications about their orders’ status in the app. A customer is notified when their order is being prepared, when a delivery estimate is made, when the order is being delivered, when the order has been delivered and when the order is canceled for any reason.
 
-R9: Customers must be recommended restaurants in the app based on their location, any current events, feedback given to restaurants, customers’ previous orders and food preferences.
+**R9:** Customers must be recommended restaurants in the app based on their location, any current events, feedback given to restaurants, customers’ previous orders and food preferences.
 
-R10: Customers must receive an email containing a receipt of any order they make.
+**R10:** Customers must receive an email containing a receipt of any order they make.
 
-R11: Customers have access to a profile where they can see all relevant data about themselves. This includes previous orders, coupons and general information.
+**R11:** Customers have access to a profile where they can see all relevant data about themselves. This includes previous orders, coupons and general information.
 
-R12: Customers are able to register and login to the system in order for them to make orders and have a profile.
+**R12:** Customers are able to register and login to the system in order for them to make orders and have a profile.
 
-Payment requirements:
+**Payment requirements:**
 
-R13: MTOGO does not want to deal with payments themselves, so that they do not get problems with authorities. This will also make it easier to have a payment system that works internationally.
+**R13:** MTOGO does not want to deal with payments themselves, so that they do not get problems with authorities. This will also make it easier to have a payment system that works internationally.
 
-R14: Restaurants must pay a fee to MTOGO for using the MTOGO system.
+**R14:** Restaurants must pay a fee to MTOGO for using the MTOGO system.
 
-R15: Delivery fees for customer orders are calculated on order, and are visible in the order receipt.
+**R15:** Delivery fees for customer orders are calculated on order, and are visible in the order receipt.
 
-R16: In order for a courier to get paid for each delivery, the system calculates reward per order by the basic reward , busy hours factor and distance as shown in the table. The distance reward is counted after first 2000 m
+**R16:** In order for a courier to get paid for each delivery, the system calculates reward per order by the basic reward , busy hours factor and distance as shown in the table. The distance reward is counted after first 2000 m
 
-Courier requirements:
+**Courier requirements:**
 
-R17: A person must be able to sign in as a courier.
+**R17:** A person must be able to sign in as a courier.
 
-R18: Courier must be able to choose to go online in order to be able to pick up orders.
+**R18:** Courier must be able to choose to go online in order to be able to pick up orders.
 
-R19: Courier must be able to choose one area to work within.
+**R19:** Courier must be able to choose one area to work within.
 
-R20: Courier must be able to see delivery tasks available to be picked up from restaurants.
+**R20:** Courier must be able to see delivery tasks available to be picked up from restaurants.
 
-R21: Courier must be able to see information about pickup and drop off (locations of both the restaurant and the customer, live updates on pickup and delivery time, task distance).
+**R21:** Courier must be able to see information about pickup and drop off (locations of both the restaurant and the customer, live updates on pickup and delivery time, task distance).
 
-R22: Courier must be able to provide transportation type in order to estimate delivery time
+**R22:** Courier must be able to provide transportation type in order to estimate delivery time
 
-R23: Courier must be able to claim an order to pick up.
+**R23:** Courier must be able to claim an order to pick up.
 
-R24: Courier must be able to check all items of the order that is being picked up at the restaurant and approve it.
+**R24:** Courier must be able to check all items of the order that is being picked up at the restaurant and approve it.
 
-R25: Courier must be able to set the order as delivered to the customer if the courier is within 500 m from the delivery destination.
+**R25:** Courier must be able to set the order as delivered to the customer if the courier is within 500 m from the delivery destination.
 
-R26: Courier must be able to cancel the claimed order pickup by providing the cancelation reason to the area manager.
+**R26:** Courier must be able to cancel the claimed order pickup by providing the cancelation reason to the area manager.
 
-R27: Courier must be able to view his/hers  stats by current day, week, month or by custom settings. 
+**R27:** Courier must be able to view his/hers  stats by current day, week, month or by custom settings. 
 
-R28: A person must be able to sign up as a courier.
+**R28:** A person must be able to sign up as a courier.
 
-Management requirements:
+**Management requirements:**
 
-R29: Managers are able to view a dashboard of orders which will contain information about all orders in the system. 
+**R29:** Managers are able to view a dashboard of orders which will contain information about all orders in the system. 
 
-R30: If, for any reason, orders are not chosen by couriers to deliver within 5 minutes, then the manager will get a notification about the order.
+**R30:** If, for any reason, orders are not chosen by couriers to deliver within 5 minutes, then the manager will get a notification about the order.
   
 ### Design and diagrams
 The design of the system was done using the DDD and C4 modeling approaches. The design that was developed had to be visualized for a better understanding overall. The given requirements also produced some diagrams.
@@ -219,7 +219,7 @@ The main artifacts and diagrams that has come from this process include the foll
 9. Sequence Diagrams
   
 #### Domain models 
-Domain Driven Design
+**Domain Driven Design**
 
 The domain model that was produced from the DDD process gives an overview of the domain as it was defined during initial phases of development.
 
