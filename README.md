@@ -304,6 +304,7 @@ Insert all the technologies used to build our system here
 * Tonic 0.8.2 
 #### Database  
 * Postgresql 15.1
+* redis:6.2-alpine
 
 #### Other
 * kafka 3.3.1
