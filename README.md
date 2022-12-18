@@ -260,7 +260,7 @@ We have made an architecture style which implements microservice architecture wi
   
 ![Architecture](/images/Architecture.png)   
   
-Each service is build with a hexagonal architecture in mind:  
+Each service is build with a hexagonal architecture. This will result in the following package structure:    
   
 ![Service architecture](/images/folder-structure.png)   
       
