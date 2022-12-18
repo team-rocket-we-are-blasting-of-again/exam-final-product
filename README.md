@@ -214,9 +214,8 @@ The main artifacts and diagrams that has come from this process include the foll
 8. Use Case Diagrams
 9. Sequence Diagrams
   
-#### Domain models 
-**Domain Driven Design**   
-
+#### Domain models    
+  
 The domain model that was produced from the DDD process gives an overview of the domain as it was defined during initial phases of development.
 
 ![DDD - Domain Model](/images/domain-model.png)
@@ -229,9 +228,10 @@ The following is the DDD Context Map.
 
 This is the context map that was made following the domain model. Here the previously identified subdomains have been placed into contexts, and relationships have been drawn between them. The Notification, Location, and Search subdomains were identified as being useful in several different contexts, and were placed on the map as shared kernels. Also present are lines between contexts, showing the relationships between the different contexts, by designating an upstream and a downstream in the relations.  
   
+#### Event storming  
 Concurrently with this there was made an event storming to further give us an overview of domains and how the flow of an order through the system could look like.  
   
-<img src="https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/images/EventStorming.jpg" width="450" height="450">
+<img src="https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/images/EventStorming.jpg" width=550" height="550">
   
 #### C4 models  
 The team has made several domain models of different level of the C4 model. The first being the context level.
