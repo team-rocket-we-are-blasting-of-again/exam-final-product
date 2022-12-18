@@ -93,10 +93,8 @@ To access the services, use this:
 [Local Postman collection](https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/MTOGO.postman_collection.json)  
 
 ### Legacy system  
-Analyze the domain and identify potential problems in existing legacy digital systems at the 
-customer, such as lack of functionality, performance issues, operation difficulties, data 
-storage and transformation issues, customer dissatisfaction, etc.    
-    
+MTOGO A/S has requested an update to their current solution to future proof their system. Before this can be done a transition phase is needed to have a secure and reliable transition from the old system while also maintaining all the old data without hurting the customer experience. This means that both systems will be running concurrently until an assurance can be made of a stable new system. New functionality will also be implemented, in the new system, to further optimize the customer experience.     
+      
 ### Business cases
 MTOGO A/S wants to expand their current operations by implementing a new system which can handle a higher workload and is able to be distributed internationally. The new system will focus on three main types of users - customers, restaurants, and couriers.
 
@@ -233,8 +231,7 @@ This is the context map that was made following the domain model. Here the previ
   
 Concurrently with this there was made an event storming to further give us an overview of domains and how the flow of an order through the system could look like.  
   
-
-<img src="https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/images/EventStorming.jpg" width="100" height="100">
+<img src="https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/images/EventStorming.jpg" width="450" height="450">
   
 #### C4 models  
 The team has made several domain models of different level of the C4 model. The first being the context level.
