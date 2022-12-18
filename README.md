@@ -340,7 +340,7 @@ d. process automation platforms :heavy_check_mark:
 e. microservices composition, discovery, and management tools :heavy_check_mark:    
   
 **Solution Implements Quality Standards and Best Practices**    
-The product illustrates implementation of  
+The product illustrates implementation of:    
 a. integration standards :heavy_check_mark:   
 b. decoupling and configuration of components :heavy_check_mark:    
 c. synchronous and asynchronous interaction styles :heavy_check_mark:    
@@ -348,21 +348,20 @@ d. best use of network technologies and Internet :heavy_check_mark:
 e. object-oriented programming, variety of programming languages and development 
 platforms :heavy_check_mark:       
     
-Client Applications  
-There is no specific requirement for developing client applications.  
+**Client Applications**    
+There is no specific requirement for developing client applications.    
 a. publicly available instruments, such as Postman, curl, console CLI, and web browsers, 
 which provide a simple interface for illustrating the functionality of the integrated system 
-can be used instead  
+can be used instead :heavy_check_mark:    
   
-Documentation  
-There is no requirement for writing report. Instead, the team is expected to add  
+**Documentation**   
+There is no requirement for writing report. Instead, the team is expected to add:    
 a. in the GitHub repository, a .md file, in which the integration development process and 
 considerations are briefly explained and visualized by diagrams. Including an 
-architectural diagram of the whole system and its components is a must.  
-
+architectural diagram of the whole system and its components is a must. :heavy_check_mark:     
 b. in Wiseflow, a 10-minute video, where the business cases, problems and solutions
-are discussed, demonstrated, and evaluated by the team members  
-     
+are discussed, demonstrated, and evaluated by the team members :heavy_check_mark:   
+       
 ### Version history  
 Version history from initial build to release:  
 
