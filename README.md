@@ -217,7 +217,7 @@ The main artifacts and diagrams that has come from this process include the foll
 9. Sequence Diagrams
   
 #### Domain models 
-**Domain Driven Design**
+**Domain Driven Design**   
 
 The domain model that was produced from the DDD process gives an overview of the domain as it was defined during initial phases of development.
 
@@ -229,7 +229,11 @@ The following is the DDD Context Map.
 
 ![DDD - Context Map](/images/context-map.png)
 
-This is the context map that was made following the domain model. Here the previously identified subdomains have been placed into contexts, and relationships have been drawn between them. The Notification, Location, and Search subdomains were identified as being useful in several different contexts, and were placed on the map as shared kernels. Also present are lines between contexts, showing the relationships between the different contexts, by designating an upstream and a downstream in the relations.
+This is the context map that was made following the domain model. Here the previously identified subdomains have been placed into contexts, and relationships have been drawn between them. The Notification, Location, and Search subdomains were identified as being useful in several different contexts, and were placed on the map as shared kernels. Also present are lines between contexts, showing the relationships between the different contexts, by designating an upstream and a downstream in the relations.  
+  
+Concurrently with this there was made an event planning to further give us an overview of domains and how the flow of an order through the system could look like.  
+  
+![DDD - Event Storming](/images/EventStorming.jpg)
   
 #### C4 models  
 The team has made several domain models of different level of the C4 model. The first being the context level.
@@ -306,15 +310,15 @@ The following is a list of the used technologies:
   
 #### Database  
 * Postgresql 15.1
-* redis:6.2-alpine
+* Redis:6.2-alpine
 
 #### Other
-* kafka 3.3.1
-* kubernetes 2.13.1
-* camunda 7
+* Kafka 3.3.1
+* Kubernetes 2.13.1
+* Camunda 7
     
 ### Mandatory feature requirements    
-Required checklist delivered from our teacher.  
+Required checklist delivered by our teacher.  
      
 **It Is a Composite System**  
 The software system integrates a variety of disparate applications, components, and data sources
