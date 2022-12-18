@@ -313,17 +313,16 @@ The following is a list of the used technologies:
 * kubernetes 2.13.1
 * camunda 7
     
-### Mandatory feature requirements  
-The following is a checklist from Dora which are requirements which we HAVE to meet so we will use this as a check list and write very short  
-how we met each of the requirements. 
+### Mandatory feature requirements    
+Required checklist delivered from our teacher.  
      
-The software system integrates a variety of disparate applications, components, and data sources
-of three types: 
+*The software system integrates a variety of disparate applications, components, and data sources
+of three types:*   
   
-It Is a Composite System   
-a. monolithic or legacy application  
-b. web services or service-oriented application  
-c. microservices architecture application  
+**It Is a Composite System**   
+a. ~~monolithic~~ or legacy application :heavy_check_mark:   
+b. web services :heavy_check_mark: or ~~service-oriented application~~ 
+c. microservices architecture application  :heavy_check_mark:  
   
 It Has Business Context  
 The integration architecture design reflects the business context:  
