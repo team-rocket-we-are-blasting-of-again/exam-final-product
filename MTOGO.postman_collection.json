@@ -1,0 +1,633 @@
+{
+	"info": {
+		"_postman_id": "89201fdb-71d8-45b9-ba8f-141296773251",
+		"name": "MTOGO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12830793"
+	},
+	"item": [
+		{
+			"name": "gateway",
+			"item": [
+				{
+					"name": "routs",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "gate_ps",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gate_us",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/gateway/route",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"gateway",
+								"route"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "restaurant",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Restaurant \",\r\n    \"phone\": \" \",\r\n    \"password\": \"password\",\r\n    \"email\": \" @mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/restaurant/register",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\" \",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/auth/restaurant/login",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"auth",
+								"restaurant",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyOTYwMDcsImV4cCI6MTY3MTMzOTIwNywibmJmIjoxNjcxMjk2MDA3LCJyb2xlIjoiUkVTVEFVUkFOVCIsImlkIjoxNDR9.NULL1pgV4hyQiuLJgXdiBno3xfYtxKlAZ8ygoV27598L6GJH0JiQMAaYBp-jS3U9dvW4c67xuz3TuEyTmDg9aUDRyYXiVTFcUbGdFtL1RosGPYvGOdB5gFnSbZ-ATPr7jL5SEdZF5QFECcoEKRP_qjTPVXo2ONz3rsqGoyGnk5sMMCry3MFkCwghaQMkAWJqSjzr_lYwEj8LB1Y5hvyvkDD4QGTaGDfAlsefsHmfTaCpo7cba83bVEQWrfdVrUL0Lg-6dcgQdgpVtdsxtGkT3Z8m4WvFUwujMTTRxA3c8yhtPX7U8OhNZiERyvPq-XyNX4nIclllhBTIs4hG-lA-Ew",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurantId\" : ,\r\n    \"items\": [\r\n       \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/restaurant/menu",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get menu by rest id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/restaurant/menu?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"menu"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accept order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNjkxNzksImV4cCI6MTY3MTMxMjM3OSwibmJmIjoxNjcxMjY5MTc5LCJyb2xlIjoiUkVTVEFVUkFOVCIsImlkIjoxfQ.C7-F3KtwS4yjSqf3G-Nu7dvp7a1AcK5WMx6X_F7pecuP6DS3AjDnCIVFvSKqObz4-anaOvxdeLhUPi8j4xAAzeGjCeIJuCoWBg5N8uJ-7qGZX0bf1ylYoNn8u9HPGG_6eI3QA5x0L4_aM1FBAFEQrFNLNcLl7DLJiSZ8GTxdHK7Q_MbCdLC5pQNLEQMB19ea564LJtNn15f5OVcHwDQbfdrjcm7OUQ1Wq34LCaHuV5xQAZKGZtXa77QSS4CM32lullVHx4HKynJNKUNVUjUgsy0BbmrJH2r7hQOjaZDg5bBJPNMSMWYFHSL0cQWlEluJiW898Ujo8r7gCgcTNZ2nJQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/restaurant/accept",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"accept"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order ready",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/restaurant/ready",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"ready"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reject order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/restaurant/reject",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"reject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/restaurant/complete",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"restaurant",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "register customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Magdalena\",\r\n    \"lastName\": \"Wawrzak\",\r\n    \"email\": \" \",\r\n    \"phone\": \" \",\r\n    \"password\": \"password\",\r\n    \"addressId\" : 888\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/customers/v1/customers/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"customers",
+								"v1",
+								"customers",
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"customer1\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/auth/customer/login",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"auth",
+								"customer",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add to cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEzMjk2NjAsImV4cCI6MTY3MTM3Mjg2MCwibmJmIjoxNjcxMzI5NjYwLCJyb2xlIjoiQ1VTVE9NRVIiLCJpZCI6M30.gYwIoGNkWi1H80RngiYd7Q0qrhDrO_X2hA_hAT74NpglJVzERaiSEJuoDiZlSG1doHacwLIBOfKpu-HzYI3t2nLnZze3gg3XZ96heOcKMnpDrJYTqYyTZ6Er41pAbE2Zap6rmRsH-y0eVcvDMF6e9N0IVra4z1di4sq_3cIN0LZDcuquYujc16DnRm4AYadGT6ygaLa6QuL5kUlY4VmOYoiUUMAjb7lMtgRERYklVef6-opyUi9yr17F3T0Umf1FfiAQfpqcdeBLWo0NMbV8xr1zc7GauZEt5u8wA4DJSAPBVoMai_kRP0FVf0ey55GsrhPcMCmJqkp6ev0XguXKtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"restaurantId\": 140,\r\n    \"items\": [\r\n        {\"menuItemId\":5401, \"quantity\":1},\r\n        {\"menuItemId\":5400, \"quantity\":3}        \r\n    ],\r\n    \"withDelivery\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/customers/v1/carts/add-items",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"customers",
+								"v1",
+								"carts",
+								"add-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "purchase order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzU5NzcsImV4cCI6MTY3MTMxOTE3NywibmJmIjoxNjcxMjc1OTc3LCJyb2xlIjoiQ1VTVE9NRVIiLCJpZCI6NX0.Bt5FW8ox1C-9vP624rm0rPEfWIjGBW1K6VNV793RwcGZKR-EEOxoo8JXV8IXftPqkMzVa7Z6dB9e2o-mT4bT3dabK2ME9i7fVPkl4HPkXK_1y7LvMWekYmzcnNTLXvrTbw0X8UXLDgYxzPmKOV7W7T8ySl7dM3h_YnyRDs-RuBRCWIJcvzvkxMsqFeUAjGwJFh37smtbUwpLxVaIUQkEMbeY-4wSuH2Pvxprzwuetv3MusQ_Aj9qbTuHHmcr3VOUFholkv3gT5FK7Akf0k6n8_Pz8Y_OPxA6L1cTP6YKHSFsQv_m2CgFmax0fv4mxdA9fRAxc1Uixj42e-hnkE7IxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/customers/v1/orders/purchase",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"customers",
+								"v1",
+								"orders",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courier",
+			"item": [
+				{
+					"name": "register courier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Magdalena\",\r\n    \"lastName\": \"Wawrzak\",\r\n    \"email\": \"courier\",\r\n    \"phone\": \"123456\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/courier/register",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"courier",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login courier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"courier\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/auth/courier/login",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"auth",
+								"courier",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "claim order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzk1NDAsImV4cCI6MTY3MTMyMjc0MCwibmJmIjoxNjcxMjc5NTQwLCJyb2xlIjoiQ09VUklFUiIsImlkIjoxfQ.krwBXrCpjNvkkyO0fbBRX1RYAJK9HoUCY3mqr2dHIAzn5fdHuyhJHjcAHC2_SQZ85gAeqB7cEWi16HOYBb_8sOaBSqt3CuUsGYfCDCgvkRZ6enMSJ0a81kqiSErpti_2YcjXCkoid-Z8f4xeXz_rWyGL4XYJTbX4i7GtN5pFrEDi9AVnuRQBisBrd6YegnnZjz_JocuQwUVlpnYS8AGFT0U5tlN_ny4azwR_dSH9nruEjBXP2TKesKX6fJ9OJLHBkcPi_nUURufP_vcUJPfd1HclUrYY8qdLUXjwIJ9kYcxvLvbWwosITjo9p5la9qxXf31FN7blHtrWb_o3n1u3zg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"deliveryId\": 1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/courier/claim",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"courier",
+								"claim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drop off order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzk1NDAsImV4cCI6MTY3MTMyMjc0MCwibmJmIjoxNjcxMjc5NTQwLCJyb2xlIjoiQ09VUklFUiIsImlkIjoxfQ.krwBXrCpjNvkkyO0fbBRX1RYAJK9HoUCY3mqr2dHIAzn5fdHuyhJHjcAHC2_SQZ85gAeqB7cEWi16HOYBb_8sOaBSqt3CuUsGYfCDCgvkRZ6enMSJ0a81kqiSErpti_2YcjXCkoid-Z8f4xeXz_rWyGL4XYJTbX4i7GtN5pFrEDi9AVnuRQBisBrd6YegnnZjz_JocuQwUVlpnYS8AGFT0U5tlN_ny4azwR_dSH9nruEjBXP2TKesKX6fJ9OJLHBkcPi_nUURufP_vcUJPfd1HclUrYY8qdLUXjwIJ9kYcxvLvbWwosITjo9p5la9qxXf31FN7blHtrWb_o3n1u3zg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deliveryId\": 1 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/courier/drop",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"courier",
+								"drop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "claimed delivery tasks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzk1NDAsImV4cCI6MTY3MTMyMjc0MCwibmJmIjoxNjcxMjc5NTQwLCJyb2xlIjoiQ09VUklFUiIsImlkIjoxfQ.krwBXrCpjNvkkyO0fbBRX1RYAJK9HoUCY3mqr2dHIAzn5fdHuyhJHjcAHC2_SQZ85gAeqB7cEWi16HOYBb_8sOaBSqt3CuUsGYfCDCgvkRZ6enMSJ0a81kqiSErpti_2YcjXCkoid-Z8f4xeXz_rWyGL4XYJTbX4i7GtN5pFrEDi9AVnuRQBisBrd6YegnnZjz_JocuQwUVlpnYS8AGFT0U5tlN_ny4azwR_dSH9nruEjBXP2TKesKX6fJ9OJLHBkcPi_nUURufP_vcUJPfd1HclUrYY8qdLUXjwIJ9kYcxvLvbWwosITjo9p5la9qxXf31FN7blHtrWb_o3n1u3zg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/courier/claimed",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"courier",
+								"claimed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "camunda",
+			"item": [
+				{
+					"name": "end process",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8880/engine-rest/process-instance/32c66639-7e06-11ed-acfb-0242ac12000b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8880",
+							"path": [
+								"engine-rest",
+								"process-instance",
+								"32c66639-7e06-11ed-acfb-0242ac12000b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

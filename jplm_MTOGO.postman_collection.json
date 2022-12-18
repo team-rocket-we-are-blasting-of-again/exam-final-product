@@ -1,0 +1,669 @@
+{
+	"info": {
+		"_postman_id": "d9030cd8-c61c-4751-bfe3-726b2d710795",
+		"name": "jplm_MTOGO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12830793"
+	},
+	"item": [
+		{
+			"name": "gateway",
+			"item": [
+				{
+					"name": "routs",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "gate_ps",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gate_us",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.jplm.dk/gateway/route",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"gateway",
+								"route"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "restaurant",
+			"item": [
+				{
+					"name": "get menu by rest id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/menu?id=140",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"menu"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "140"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pizzaria\",\r\n    \"phone\": \"123456\",\r\n    \"password\": \"password\",\r\n    \"email\": \"restaurant1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/register",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNjkxNzksImV4cCI6MTY3MTMxMjM3OSwibmJmIjoxNjcxMjY5MTc5LCJyb2xlIjoiUkVTVEFVUkFOVCIsImlkIjoxfQ.C7-F3KtwS4yjSqf3G-Nu7dvp7a1AcK5WMx6X_F7pecuP6DS3AjDnCIVFvSKqObz4-anaOvxdeLhUPi8j4xAAzeGjCeIJuCoWBg5N8uJ-7qGZX0bf1ylYoNn8u9HPGG_6eI3QA5x0L4_aM1FBAFEQrFNLNcLl7DLJiSZ8GTxdHK7Q_MbCdLC5pQNLEQMB19ea564LJtNn15f5OVcHwDQbfdrjcm7OUQ1Wq34LCaHuV5xQAZKGZtXa77QSS4CM32lullVHx4HKynJNKUNVUjUgsy0BbmrJH2r7hQOjaZDg5bBJPNMSMWYFHSL0cQWlEluJiW898Ujo8r7gCgcTNZ2nJQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurantId\" : 1,\r\n    \"items\": [\r\n        {\"name\": \"Margharita\", \"category\":\"pizza\",\"description\":\"Sauce and cheese\", \"price\":98.0},\r\n        {\"name\": \"Vegetariana\", \"category\":\"pizza\",\"description\":\"Sauce, cheese, vegetables\", \"price\":105.0},\r\n        {\"name\": \"Diablo\", \"category\":\"pizza\",\"description\":\"Sauce, cheese, bacon and chilli\", \"price\":112.0}\r\n\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/menu",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"restaurant1\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/auth/restaurant/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"auth",
+								"restaurant",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accept order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNjkxNzksImV4cCI6MTY3MTMxMjM3OSwibmJmIjoxNjcxMjY5MTc5LCJyb2xlIjoiUkVTVEFVUkFOVCIsImlkIjoxfQ.C7-F3KtwS4yjSqf3G-Nu7dvp7a1AcK5WMx6X_F7pecuP6DS3AjDnCIVFvSKqObz4-anaOvxdeLhUPi8j4xAAzeGjCeIJuCoWBg5N8uJ-7qGZX0bf1ylYoNn8u9HPGG_6eI3QA5x0L4_aM1FBAFEQrFNLNcLl7DLJiSZ8GTxdHK7Q_MbCdLC5pQNLEQMB19ea564LJtNn15f5OVcHwDQbfdrjcm7OUQ1Wq34LCaHuV5xQAZKGZtXa77QSS4CM32lullVHx4HKynJNKUNVUjUgsy0BbmrJH2r7hQOjaZDg5bBJPNMSMWYFHSL0cQWlEluJiW898Ujo8r7gCgcTNZ2nJQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/accept",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"accept"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order ready",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/ready",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"ready"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reject order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/reject",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"reject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 36,\r\n    \"restaurantId\": 1,\r\n    \"prepTime\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/restaurant/complete",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"restaurant",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "register customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Magdalena\",\r\n    \"lastName\": \"Wawrzak\",\r\n    \"email\": \"customer1\",\r\n    \"phone\": \"1234561\",\r\n    \"password\": \"password\",\r\n    \"addressId\" : 888\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/customers/v1/customers/registration",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"customers",
+								"v1",
+								"customers",
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"customer1\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/auth/customer/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"auth",
+								"customer",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add to cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzU5NzcsImV4cCI6MTY3MTMxOTE3NywibmJmIjoxNjcxMjc1OTc3LCJyb2xlIjoiQ1VTVE9NRVIiLCJpZCI6NX0.Bt5FW8ox1C-9vP624rm0rPEfWIjGBW1K6VNV793RwcGZKR-EEOxoo8JXV8IXftPqkMzVa7Z6dB9e2o-mT4bT3dabK2ME9i7fVPkl4HPkXK_1y7LvMWekYmzcnNTLXvrTbw0X8UXLDgYxzPmKOV7W7T8ySl7dM3h_YnyRDs-RuBRCWIJcvzvkxMsqFeUAjGwJFh37smtbUwpLxVaIUQkEMbeY-4wSuH2Pvxprzwuetv3MusQ_Aj9qbTuHHmcr3VOUFholkv3gT5FK7Akf0k6n8_Pz8Y_OPxA6L1cTP6YKHSFsQv_m2CgFmax0fv4mxdA9fRAxc1Uixj42e-hnkE7IxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"restaurantId\": 99,\r\n    \"items\": [\r\n        {\"menuItemId\":3878, \"quantity\":1},\r\n        {\"menuItemId\":3873, \"quantity\":1}        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/customers/v1/carts/add-items",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"customers",
+								"v1",
+								"carts",
+								"add-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "purchase order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzU5NzcsImV4cCI6MTY3MTMxOTE3NywibmJmIjoxNjcxMjc1OTc3LCJyb2xlIjoiQ1VTVE9NRVIiLCJpZCI6NX0.Bt5FW8ox1C-9vP624rm0rPEfWIjGBW1K6VNV793RwcGZKR-EEOxoo8JXV8IXftPqkMzVa7Z6dB9e2o-mT4bT3dabK2ME9i7fVPkl4HPkXK_1y7LvMWekYmzcnNTLXvrTbw0X8UXLDgYxzPmKOV7W7T8ySl7dM3h_YnyRDs-RuBRCWIJcvzvkxMsqFeUAjGwJFh37smtbUwpLxVaIUQkEMbeY-4wSuH2Pvxprzwuetv3MusQ_Aj9qbTuHHmcr3VOUFholkv3gT5FK7Akf0k6n8_Pz8Y_OPxA6L1cTP6YKHSFsQv_m2CgFmax0fv4mxdA9fRAxc1Uixj42e-hnkE7IxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/customers/v1/orders/purchase",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"customers",
+								"v1",
+								"orders",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courier",
+			"item": [
+				{
+					"name": "register courier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Magdalena\",\r\n    \"lastName\": \"Wawrzak\",\r\n    \"email\": \"courier\",\r\n    \"phone\": \"123456\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/courier/register",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"courier",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login courier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"courier\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/auth/courier/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"auth",
+								"courier",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "claim order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzk1NDAsImV4cCI6MTY3MTMyMjc0MCwibmJmIjoxNjcxMjc5NTQwLCJyb2xlIjoiQ09VUklFUiIsImlkIjoxfQ.krwBXrCpjNvkkyO0fbBRX1RYAJK9HoUCY3mqr2dHIAzn5fdHuyhJHjcAHC2_SQZ85gAeqB7cEWi16HOYBb_8sOaBSqt3CuUsGYfCDCgvkRZ6enMSJ0a81kqiSErpti_2YcjXCkoid-Z8f4xeXz_rWyGL4XYJTbX4i7GtN5pFrEDi9AVnuRQBisBrd6YegnnZjz_JocuQwUVlpnYS8AGFT0U5tlN_ny4azwR_dSH9nruEjBXP2TKesKX6fJ9OJLHBkcPi_nUURufP_vcUJPfd1HclUrYY8qdLUXjwIJ9kYcxvLvbWwosITjo9p5la9qxXf31FN7blHtrWb_o3n1u3zg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"deliveryId\": 1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/courier/claim",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"courier",
+								"claim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drop off order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzk1NDAsImV4cCI6MTY3MTMyMjc0MCwibmJmIjoxNjcxMjc5NTQwLCJyb2xlIjoiQ09VUklFUiIsImlkIjoxfQ.krwBXrCpjNvkkyO0fbBRX1RYAJK9HoUCY3mqr2dHIAzn5fdHuyhJHjcAHC2_SQZ85gAeqB7cEWi16HOYBb_8sOaBSqt3CuUsGYfCDCgvkRZ6enMSJ0a81kqiSErpti_2YcjXCkoid-Z8f4xeXz_rWyGL4XYJTbX4i7GtN5pFrEDi9AVnuRQBisBrd6YegnnZjz_JocuQwUVlpnYS8AGFT0U5tlN_ny4azwR_dSH9nruEjBXP2TKesKX6fJ9OJLHBkcPi_nUURufP_vcUJPfd1HclUrYY8qdLUXjwIJ9kYcxvLvbWwosITjo9p5la9qxXf31FN7blHtrWb_o3n1u3zg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deliveryId\": 1 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.jplm.dk/courier/drop",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"courier",
+								"drop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "claimed delivery tasks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEyNzk1NDAsImV4cCI6MTY3MTMyMjc0MCwibmJmIjoxNjcxMjc5NTQwLCJyb2xlIjoiQ09VUklFUiIsImlkIjoxfQ.krwBXrCpjNvkkyO0fbBRX1RYAJK9HoUCY3mqr2dHIAzn5fdHuyhJHjcAHC2_SQZ85gAeqB7cEWi16HOYBb_8sOaBSqt3CuUsGYfCDCgvkRZ6enMSJ0a81kqiSErpti_2YcjXCkoid-Z8f4xeXz_rWyGL4XYJTbX4i7GtN5pFrEDi9AVnuRQBisBrd6YegnnZjz_JocuQwUVlpnYS8AGFT0U5tlN_ny4azwR_dSH9nruEjBXP2TKesKX6fJ9OJLHBkcPi_nUURufP_vcUJPfd1HclUrYY8qdLUXjwIJ9kYcxvLvbWwosITjo9p5la9qxXf31FN7blHtrWb_o3n1u3zg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.jplm.dk/courier/claimed",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jplm",
+								"dk"
+							],
+							"path": [
+								"courier",
+								"claimed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "camunda",
+			"item": [
+				{
+					"name": "end process",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8880/engine-rest/process-instance/32c66639-7e06-11ed-acfb-0242ac12000b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8880",
+							"path": [
+								"engine-rest",
+								"process-instance",
+								"32c66639-7e06-11ed-acfb-0242ac12000b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
