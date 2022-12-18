@@ -89,7 +89,7 @@ The whole system can be run as docker components with the following command writ
 
 Once the docker container is up and runnig, verify if the auth-, restaurant-, courier- and customer-services have subscribed to the gateway api by calling ``localhost:9999/gateway/route``. Response should contain 6 JSON-objects.
 
-To access the services, use this:
+To access the services, use the provided Postman collection:  
 [Local Postman collection](https://github.com/team-rocket-we-are-blasting-of-again/exam-final-product/blob/main/MTOGO.postman_collection.json)  
 
 ### Legacy system  
