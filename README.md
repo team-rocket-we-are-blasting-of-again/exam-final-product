@@ -373,10 +373,18 @@ Version history from initial build to release:
 - 1.0.9 [final release](https://hub.docker.com/layers/tobiaszimmer/exam-customer-service/kafka_fail-1.0.9-RELEASE/images/sha256-c41b387e71fe79651d598c711643c601dafc2221237fdcd91d34624707019161?context=explore)  
   
 ### Reflection  
-Process of implementing MTOGO system has resulted in better understanding of the integration patterns as well as made it possible to practice usage and implementation of the technologies used in the project. 
-As a team of students with no professional experience we were able to build a functional product in just few weeks. 
-We can conclude that the essential subject which is the integration of system requires good planing and understanding of the requirements given by the stakeholders. 
-We have learned that establishing and testing communication between different micro-services should be implemented from the very beginning of the manufacturing process.
-
+Process of implementing MTOGO system has resulted in better understanding of the integration patterns as well as made it possible to practice usage and implementation of the technologies used in the project. As a team of students with no professional experience we were able to build a functional product in just few weeks. We can conclude that the essential subject which is the integration of system requires good planning and understanding of the requirements given by the stakeholders. We have learned that establishing and testing communication between different micro-services should be implemented from the very beginning of the manufacturing process.  
+  
+We would like to show the initial thought of our login phase and how we had drawn a sequence diagram.  
+    
+![Courier login](/images/ Sequence_Login_as_a_Courier.png)  
+        
+This is to show that our design did change during the development of the system. The reason behind this is also that we thought of new ways of how the whole system should interact with all the technologies which was required to have implemented.       
+  
+If we had more time, we would have liked to implement services such as management, location, recommendation, feedback, search and have payment service interact with a payment service such as Stripe.      
+    
+Lastly, we would have liked to have data retrieval from more data sources from the legacy system. It was unexpected how much time it took to integrate old data with new data sources in different databases.  
+    
+All in all, we gained a lot of new knowledge during a long period of hard work which we can take with us into our professional life.  
 
 
