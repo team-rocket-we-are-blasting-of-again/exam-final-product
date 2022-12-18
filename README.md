@@ -376,8 +376,8 @@ Version history from initial build to release:
 Process of implementing MTOGO system has resulted in better understanding of the integration patterns as well as made it possible to practice usage and implementation of the technologies used in the project. As a team of students with no professional experience we were able to build a functional product in just few weeks. We can conclude that the essential subject which is the integration of system requires good planning and understanding of the requirements given by the stakeholders. We have learned that establishing and testing communication between different micro-services should be implemented from the very beginning of the manufacturing process.  
   
 We would like to show the initial thought of our login phase and how we had drawn a sequence diagram.  
-    
-![Courier login](/images/ Sequence_Login_as_a_Courier.png)  
+  
+![Courier login](/images/Sequence_Login_as_a_Courier.png)  
         
 This is to show that our design did change during the development of the system. The reason behind this is also that we thought of new ways of how the whole system should interact with all the technologies which was required to have implemented.       
   
