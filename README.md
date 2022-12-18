@@ -257,7 +257,22 @@ Short aboout our thoughts and why we went with the current solution (has to incl
 -insert example of our microservice package structure (maybe explain here why we went with hexogonal and the four layers)  
   
 ### System integration patterns
-describe the integration patterns that are used through our system (this will give very good points with Dora :smile: )
+The Enterprice Integration patters that has been made use of throughout this project are the following:
+
+- Publish-Subscribe Channel
+- Request-Reply
+- Process Manager
+- Polling Consumer
+- Message Broker
+- Remote Procedure Invocation
+- Pipes and Filters
+- Message Channel	
+- Channel Adapter
+- Message Translator	
+- Message Endpoint	
+- Message	
+- Event-Driven Consumer	
+- Format Indicator
   
 ### Technologies  
 Insert all the technologies used to build our system here
