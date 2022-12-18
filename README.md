@@ -33,9 +33,10 @@
 ### Introduction     
 MTOGO A/S is seeking to replace its current system since it is now insufficient. The reasoning behind this is because the old system is monolithic in architecture. As MTOGO is growing internationally as a business, they need to future proof their business by becoming scalable and reliable in multiple locations.
   
-also link to our video here
-also link to our deployment here  
-
+A video presentation can be found here:  [System presentation](https://www.youtube.com/watch?v=lLA2O8guRCU&ab_channel=Riisager)  
+  
+A link to our deployed Kubernetes cluster: [Deployment](https://jplm.dk/) :cloud:  
+  
 ### Repositories
 The following is a list of all the current and future github repositories that was used to develop the MTOGO Food Delivery System.
 
